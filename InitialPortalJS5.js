@@ -35,6 +35,6 @@ function waitForWrapperRender() {
         renderCards();
     } else {
         // Retry after a delay
-        setTimeout(waitForRender, 300);
+        setTimeout(waitForWrapperRender, 300);
     }
 }
