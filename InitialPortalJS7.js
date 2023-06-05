@@ -8,22 +8,32 @@ function renderCards() {
     $('#card-wrapper').append(`
 <div class="cardItem">
         <img src="https://srv-k2five/Designer/Image.ashx?ImID=110253">
-        <p class="cardTitle">إجراء ضد مؤسسة </p>
+        <p class="cardTitle">الشؤون القانونية</p>
         <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
     </div>
     <div class="cardItem">
         <img src="https://srv-k2five/Designer/Image.ashx?ImID=110253">
-        <p class="cardTitle">إجراء مع المؤسسة</p>
+        <p class="cardTitle">تكنولوجيا المعلومات</p>
         <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
     </div>
     <div class="cardItem">
         <img src="https://srv-k2five/Designer/Image.ashx?ImID=110253">
-        <p class="cardTitle">إجراء طلب تحقيق</p>
+        <p class="cardTitle">الهندسة</p>
         <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
     </div>
     <div class="cardItem">
         <img src="https://srv-k2five/Designer/Image.ashx?ImID=110253">
-        <p class="cardTitle">تقديم شكوى</p>
+        <p class="cardTitle">العمليات</p>
+        <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
+    </div>
+    <div class="cardItem">
+        <img src="https://srv-k2five/Designer/Image.ashx?ImID=110253">
+        <p class="cardTitle">الأبحاث</p>
+        <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
+    </div>
+    <div class="cardItem">
+        <img src="https://srv-k2five/Designer/Image.ashx?ImID=110253">
+        <p class="cardTitle">الأبحاث</p>
         <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
     </div>
     `)
