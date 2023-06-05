@@ -1,0 +1,72 @@
+
+div[name="Navbar"] {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    right: 0;
+    z-index: 100;
+    
+}
+
+body {
+    background : #7c99bc !important ;
+}
+
+.runtime-form {
+    position : absolute  !important ;
+    top : 160px ;
+    left : 5% !important ;
+    width : 70% !important ;
+}
+
+.form {
+background-color : #EBF3FD !important ;
+}
+
+div[name="Navbar"] {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    right: 0;
+    z-index: 100;
+
+}
+
+.toolbars , .single {
+ display : none !important ;
+}
+
+
+.runtime-form {
+    position: absolute !important;
+    top: 100px;
+    left: 5% !important;
+    width: 70% !important;
+}
+
+.form {
+    background-color: #EBF3FD !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #0066cc; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color:  #0066cce0;
+}
+
+
