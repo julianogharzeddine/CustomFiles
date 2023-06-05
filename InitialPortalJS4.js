@@ -1,9 +1,8 @@
 $(document).ready(function () {
-   setTimeout(function(){  
-       renderCards()
-   }
-              ,3000)
- 
+
+    // Wait for the card-wrapper div to render successfully
+    waitForWrapperRender();
+
 })
 function renderCards() {
     $('#card-wrapper').append(`
@@ -28,4 +27,14 @@ function renderCards() {
         <a class='goToCategoryButton' href=""> تعرّف على المزيد</a>
     </div>
     `)
+}
+
+function waitForWrapperRender() {
+    if ($('#card-wrapper').length > 0) {
+        // Call your function here
+        renderCards();
+    } else {
+        // Retry after a delay
+        setTimeout(waitForRender, 300);
+    }
 }
