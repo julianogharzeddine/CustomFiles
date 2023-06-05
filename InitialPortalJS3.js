@@ -1,6 +1,9 @@
 $(document).ready(function () {
-    alert('hi')
-    renderCards()
+   setTimeout(function(){  
+       renderCards()
+   }
+              ,3000)
+ 
 })
 function renderCards() {
     $('#card-wrapper').append(`
