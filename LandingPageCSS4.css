@@ -699,7 +699,7 @@ background :  #EBF3FD  !important ;
   #InvestigationCards{
       width:90% !important;
       display: grid !important;
-      grid-template-columns: repeat(2, 1fr) !important;
+      grid-template-columns: repeat(3, 1fr) !important;
       place-items: center !important;
       grid-row-gap : 30px !important;
       overflow-y: auto !important;
