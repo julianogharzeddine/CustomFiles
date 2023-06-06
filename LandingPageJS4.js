@@ -1,8 +1,8 @@
 
 $(document).ready(function () {
-  setTimeout(function () {
-    renderLegalServicesCards()
-  }, 3000)
+
+   // Wait for the card-wrapper div to render successfully
+   waitForLegalWrapperRender();
 
 })
 
@@ -157,4 +157,14 @@ function renderLegalServicesCards() {
       <a class='goToCategoryButton knowMore' href="">تعرّف على المزيد</a>
   </div>
   `)
+}
+
+function waitForLegalWrapperRender() {
+  if ($('#legalservices-card-wrapper').html()=="") {
+      // Call your function here
+      renderLegalServicesCards() 
+  } else {
+      // Retry after a delay
+      setTimeout(waitForLegalWrapperRender, 200);
+  }
 }
