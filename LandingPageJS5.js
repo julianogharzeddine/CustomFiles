@@ -1,8 +1,10 @@
 
 $(document).ready(function () {
 
-   // Wait for the card-wrapper div to render successfully
-   waitForLegalWrapperRender();
+  // Wait for the card-wrapper div to render successfully
+  waitForLegalWrapperRender();
+
+
 
 })
 
@@ -160,11 +162,11 @@ function renderLegalServicesCards() {
 }
 
 function waitForLegalWrapperRender() {
-  if ($('#legalservices-card-wrapper').html()=="") {
-      // Call your function here
-      renderLegalServicesCards() 
+  if ($("[name='LegalServicesDL']").length > 0) {
+    // Call your function here
+    renderLegalServicesCards()
   } else {
-      // Retry after a delay
-      setTimeout(waitForLegalWrapperRender, 200);
+    // Retry after a delay
+    setTimeout(waitForLegalWrapperRender, 200);
   }
 }
