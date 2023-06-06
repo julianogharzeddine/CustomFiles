@@ -8,10 +8,10 @@ $(document).ready(function () {
     renderLegalServicesCards()
   }, 2000)
 
-  $('#createInvestigationButton').click(function(){
-    $("[name='LegalServicesDL']").css('display' , 'none')
-    $("[name='showTalabatTahkik hiddenButton']").trigger('click')
-  })
+$(document).on('click', '#createInvestigationButton', function () {
+  $("[name='LegalServicesDL']").css('display', 'none')
+  $("[name='showTalabatTahkik hiddenButton']").trigger('click')
+})
 
   
 
