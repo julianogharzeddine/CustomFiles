@@ -1,14 +1,23 @@
 
+
 $(document).ready(function () {
 
   // Wait for the card-wrapper div to render successfully
  
   setTimeout(function(){
     renderLegalServicesCards()
-  },2000)
+  }, 2000)
 
+  $('#createInvestigationButton').click(function(){
+    $("[name='showTalabatTahkik hiddenButton']").trigger('click')
+  })
+
+
+  $("a").click(function(){
+    $("[name='LegalServicesDL']").css('display' , 'none')
+    renderInvestCards()
+  })
 })
-
 
 function renderInvestCards() {
   var cardWrapper = $("#card-wrapper");
@@ -132,32 +141,32 @@ function renderLegalServicesCards() {
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/legalAffairs.png" class='titleImage'>
       <p class="cardTitle" id='actionAgainstCompany'>إجراء ضد مؤسسة</p>
-      <a class='goToCategoryButton knowMore' href="">تعرّف على المزيد</a>
+      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/cardImg.png" class='titleImage'>
       <p class="cardTitle" id='actionWithCompany'>إجراء مع المؤسسة</p>
-      <a class='goToCategoryButton knowMore' href="">تعرّف على المزيد</a>
+      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/architecture.png" class='titleImage'>
       <p class="cardTitle" id='actionCreateInvestigation'>إجراء طلب تحقيق</p>
-      <a class='goToCategoryButton knowMore' href="">تعرّف على المزيد</a>
+      <a class='goToCategoryButton knowMore' id='createInvestigationButton'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/operations.png" class='titleImage'>
       <p class="cardTitle" id='actionCreateComplaint'>تقديم شكوى</p>
-      <a class='goToCategoryButton knowMore' href="">تعرّف على المزيد</a>
+      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/research.png" class='titleImage'>
       <p class="cardTitle" id='actionConflictOfInterest'>إجراء تضارب المصالح</p>
-      <a class='goToCategoryButton knowMore' href="">تعرّف على المزيد</a>
+      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/maintenance.png" class='titleImage'>
       <p class="cardTitle" id='actionCreateStudy'>إجراءات دراسة العقود</p>
-      <a class='goToCategoryButton knowMore' href="">تعرّف على المزيد</a>
+      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
   </div>
   `)
 }
@@ -168,6 +177,6 @@ function waitForLegalWrapperRender() {
     renderLegalServicesCards()
   } else {
     // Retry after a delay
-    setTimeout(waitForLegalWrapperRender, 600);
+    setTimeout(waitForLegalWrapperRender, 200);
   }
 }
