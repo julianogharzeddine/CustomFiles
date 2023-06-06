@@ -2,9 +2,7 @@
 $(document).ready(function () {
 
   // Wait for the card-wrapper div to render successfully
-  waitForLegalWrapperRender();
-
-
+   waitForLegalWrapperRender()
 
 })
 
@@ -167,6 +165,6 @@ function waitForLegalWrapperRender() {
     renderLegalServicesCards()
   } else {
     // Retry after a delay
-    setTimeout(waitForLegalWrapperRender, 200);
+    setTimeout(waitForLegalWrapperRender, 600);
   }
 }
