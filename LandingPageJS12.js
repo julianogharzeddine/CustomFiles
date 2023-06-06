@@ -33,7 +33,7 @@ function renderInvestOptions(){
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/cardImg.png" class='titleImage'>
       <p class="cardTitle">طلبات التحقيق</p>
-      <a class='goToCategoryButton knowMore id='showAllInvestigations'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton knowMore' id='showAllInvestigations'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/architecture.png" class='titleImage'>
