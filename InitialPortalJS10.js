@@ -10,63 +10,63 @@ function renderCards() {
     $('#card-wrapper').append(`
 <div class="cardItem">
         <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/legalAffairs.png" class='titleImage'>
-        <p class="cardTitle">الشؤون القانونية</p>
+        <p class="cardTitle" id='LegalAffairs'>الشؤون القانونية</p>
         <img src='https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/employeeIcon.png' class='employeeIcon'>
         <div class='empNoWrap'>
-        <p class='empCountLabel'>فردًا في القسم</p>
+        <p class='empCountLabel' class='peopleInDepartment'>فردًا في القسم</p>
         <p class='empCount'>36</p>
         </div>
-        <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
+        <a class='goToCategoryButton browseDepartmentDetails' href="https://srv-k2five/Designer/Runtime/Form/LandingPage/" > تعرّف على القسم</a>
     </div>
     <div class="cardItem">
         <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/cardImg.png" class='titleImage'>
-        <p class="cardTitle">تكنولوجيا المعلومات</p>
+        <p class="cardTitle" id='IT'>تكنولوجيا المعلومات</p>
         <img src='https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/employeeIcon.png' class='employeeIcon'>
         <div class='empNoWrap'>
-        <p class='empCountLabel'>فردًا في القسم</p>
+        <p class='empCountLabel' class='peopleInDepartment'>فردًا في القسم</p>
         <p class='empCount'>24</p>
         </div>
-        <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
+        <a class='goToCategoryButton browseDepartmentDetails' href=""> تعرّف على القسم</a>
     </div>
     <div class="cardItem">
         <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/architecture.png" class='titleImage'>
-        <p class="cardTitle">الهندسة</p>
+        <p class="cardTitle" id='Architecture'>الهندسة</p>
         <img src='https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/employeeIcon.png' class='employeeIcon'>
         <div class='empNoWrap'>
-        <p class='empCountLabel'>فردًا في القسم</p>
+        <p class='empCountLabel' class='peopleInDepartment'>فردًا في القسم</p>
         <p class='empCount'>130</p>
         </div>
-        <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
+        <a class='goToCategoryButton browseDepartmentDetails' href=""> تعرّف على القسم</a>
     </div>
     <div class="cardItem">
         <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/operations.png" class='titleImage'>
-        <p class="cardTitle">العمليات</p>
+        <p class="cardTitle" id='Operations'>العمليات</p>
         <img src='https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/employeeIcon.png' class='employeeIcon'>
         <div class='empNoWrap'>
-        <p class='empCountLabel'>فردًا في القسم</p>
+        <p class='empCountLabel' class='peopleInDepartment'>فردًا في القسم</p>
         <p class='empCount'>42</p>
         </div>
-        <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
+        <a class='goToCategoryButton browseDepartmentDetails' href=""> تعرّف على القسم</a>
     </div>
     <div class="cardItem">
         <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/research.png" class='titleImage'>
-        <p class="cardTitle">الأبحاث</p>
+        <p class="cardTitle" id='Research'>الأبحاث</p>
         <img src='https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/employeeIcon.png' class='employeeIcon'>
        <div class='empNoWrap'>
-        <p class='empCountLabel'>فردًا في القسم</p>
+        <p class='empCountLabel' class='peopleInDepartment'>فردًا في القسم</p>
         <p class='empCount'>26</p>
         </div>
-        <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
+        <a class='goToCategoryButton browseDepartmentDetails' href=""> تعرّف على القسم</a>
     </div>
     <div class="cardItem">
         <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/maintenance.png" class='titleImage'>
-        <p class="cardTitle">الصيانة</p>
+        <p class="cardTitle" id='Maintenance'>الصيانة</p>
         <img src='https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/employeeIcon.png' class='employeeIcon'>
         <div class='empNoWrap'>
-        <p class='empCountLabel'>فردًا في القسم</p>
+        <p class='empCountLabel' class='peopleInDepartment'>فردًا في القسم</p>
         <p class='empCount'>67</p>
         </div>
-        <a class='goToCategoryButton' href=""> تعرّف على القسم</a>
+        <a class='goToCategoryButton browseDepartmentDetails' href=""> تعرّف على القسم</a>
     </div>
     `)
 }
