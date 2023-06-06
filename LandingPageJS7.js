@@ -2,7 +2,10 @@
 $(document).ready(function () {
 
   // Wait for the card-wrapper div to render successfully
-   waitForLegalWrapperRender()
+ 
+  setTimeout(function(){
+    renderLegalServicesCards()
+  },2000)
 
 })
 
