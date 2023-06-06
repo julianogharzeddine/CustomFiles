@@ -38,12 +38,12 @@ function renderInvestOptions(){
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/architecture.png" class='titleImage'>
       <p class="cardTitle">إجراء طلب تحقيق</p>
-      <a class='goToCategoryButton knowMore' id='createInvestigationButton'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton knowMore' id='createInvestigationButton' href='https://srv-k2five/Runtime/Runtime/Form/Submit.Form/'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/operations.png" class='titleImage'>
       <p class="cardTitle">تقديم شكوى</p>
-      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton knowMore' href='https://srv-k2five/Runtime/Runtime/Form/InitialForm.Form/'>تعرّف على المزيد</a>
   </div>
   
   `)
