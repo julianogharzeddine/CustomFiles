@@ -183,7 +183,7 @@ div[name="Navbar"] {
 .empNoWrap {
 
     display: flex !important;
-    flex-direction: row-reverse !important;
+    flex-direction: row-reverse ;
     justify-content: center;
     place-items: center;
     gap: 10px;
