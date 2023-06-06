@@ -1,8 +1,8 @@
 
 $(document).ready(function () {
-  setTimeout(function(){
-    renderLegalServicesCards(),2000)
-  }
+  setTimeout(function () {
+    renderLegalServicesCards()
+  }, 3000)
 
 })
 
@@ -19,7 +19,7 @@ function renderInvestCards() {
   var rowObjects = fetchRowValues();
 
   rowObjects.forEach(function (row) {
-    
+
     var creatorName = row[0] !== undefined ? row[0] : '';
     var creationDate = row[1] !== undefined ? row[1] : '';
     var investStatus = row[2] !== undefined ? row[2] : '';
@@ -93,9 +93,9 @@ function fetchReqStatuses() {
   let newNo = $("span[name='New']").text()
   let completedNo = $("span[name='Completed']").text()
 
-$("span[name='Active']").css("visibility", "hidden !important");
-$("span[name='New']").css("visibility", "hidden !important");
-$("span[name='Completed']").css("visibility", "hidden !important");
+  $("span[name='Active']").css("visibility", "hidden !important");
+  $("span[name='New']").css("visibility", "hidden !important");
+  $("span[name='Completed']").css("visibility", "hidden !important");
 
 
   return [activeNo, newNo, completedNo]
@@ -123,7 +123,7 @@ function createReqCounters() {
   $("#reqCounter").append(content)
 }
 
-function renderLegalServicesCards(){
+function renderLegalServicesCards() {
   $('#legalservices-card-wrapper').html("")
   $('#legalservices-card-wrapper').append(`
   <div class="cardItem">
