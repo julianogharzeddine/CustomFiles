@@ -9,14 +9,12 @@ $(document).ready(function () {
   }, 2000)
 
   $('#createInvestigationButton').click(function(){
+    $("[name='LegalServicesDL']").css('display' , 'none')
     $("[name='showTalabatTahkik hiddenButton']").trigger('click')
   })
 
+  
 
-  $("a").click(function(){
-    $("[name='LegalServicesDL']").css('display' , 'none')
-    renderInvestCards()
-  })
 })
 
 function renderInvestCards() {
