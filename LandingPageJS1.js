@@ -1,6 +1,9 @@
 
 $(document).ready(function () {
-  renderLegalServicesCards()
+  setTimeout(function(){
+    renderLegalServicesCards(),2000)
+  }
+
 })
 
 
