@@ -3,19 +3,54 @@
 $(document).ready(function () {
 
   // Wait for the card-wrapper div to render successfully
- 
-  setTimeout(function(){
+
+  setTimeout(function () {
     renderLegalServicesCards()
   }, 2000)
 
-$(document).on('click', '#createInvestigationButton', function () {
-  $("[name='LegalServicesDL']").css('display', 'none')
-  $("[name='showTalabatTahkik hiddenButton']").trigger('click')
+  $('#createInvestigationButton').click(function () {
+    $("[name='showTalabatTahkik hiddenButton']").trigger('click')
+  })
+
+
+  $(document).on('click', '#createInvestigationButton', function () {
+    $("[name='showTalabatTahkik hiddenButton']").trigger('click')
+    renderInvestOptions()
+  })
+
+  $(document).on('click', '#showAllInvestigations', function () {
+    $("[name='showAllInvestigations hiddenButton']").trigger('click')
+   createReqCounters()
+   renderInvestCards()
+
+  })
 })
 
+function renderInvestOptions(){
   
+  $('#InvestigationCards').html("")
+  $('#InvestigationCards').append(`
+  <div class="cardItem">
+      <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/cardImg.png" class='titleImage'>
+      <p class="cardTitle">طلبات التحقيق</p>
+      <a class='goToCategoryButton knowMore id='showAllInvestigations'>تعرّف على المزيد</a>
+  </div>
+  <div class="cardItem">
+      <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/architecture.png" class='titleImage'>
+      <p class="cardTitle">إجراء طلب تحقيق</p>
+      <a class='goToCategoryButton knowMore' id='createInvestigationButton'>تعرّف على المزيد</a>
+  </div>
+  <div class="cardItem">
+      <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/operations.png" class='titleImage'>
+      <p class="cardTitle">تقديم شكوى</p>
+      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
+  </div>
+  
+  `)
+}
 
-})
+
+
 
 function renderInvestCards() {
   var cardWrapper = $("#card-wrapper");
@@ -178,3 +213,6 @@ function waitForLegalWrapperRender() {
     setTimeout(waitForLegalWrapperRender, 200);
   }
 }
+
+
+
