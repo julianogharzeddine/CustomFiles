@@ -580,15 +580,9 @@ div[name="RequestsInventory"] .grid-body {
 ::-webkit-scrollbar-thumb:hover {
   background-color:  #0066cce0;
 }
-
-
-div[name="InvestigationButtonsView"] *  {
-  background :  #EBF3FD  !important ;
-}
-
         
 div[name="InvestigationButtonsView"]   {
- padding : 20px !important ;
+padding : 30px !important ;
 background :  #EBF3FD  !important ;
 }
 
@@ -686,6 +680,31 @@ background :  #EBF3FD  !important ;
       place-items: center !important;
       padding-bottom: 25px !important;
       box-sizing: border-box !important;
+  }
+
+   #InvestigationCards .cardItem {
+      padding: 20px !important;
+      height: 300px !important;
+      border-radius: 2.5ex !important;
+      box-shadow: 0px 13px 25px #0000002B !important;
+      background: #ffffff !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      place-items: center !important;
+      padding-bottom: 25px !important;
+      box-sizing: border-box !important;
+  }
+
+  #InvestigationCards{
+      width:90% !important;
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      place-items: center !important;
+      grid-row-gap : 30px !important;
+      overflow-y: auto !important;
+      direction: rtl !important;
+      padding : 30px;
   }
   
   .cardItem .titleImage {
