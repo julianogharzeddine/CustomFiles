@@ -11,11 +11,19 @@
 
 div[name="Navbar"] {
     position: fixed !important;
-    top: 0;
+    top: 46px;
     width: 100%;
     right: 0;
-    z-index: 100;
+    z-index: 1;
 
+    
+}
+[name="TranslatorHeader"] {
+
+    position : fixed !important;
+    top : 0 ;
+    left :0  ;
+    z-index : 100 !important ;
 }
 
 .employeeIcon {
@@ -38,14 +46,8 @@ body {
     background-color: #EBF3FD !important;
 }
 
-div[name="Navbar"] {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    right: 0;
-    z-index: 100;
 
-}
+
 
 .toolbars,
 .single {
@@ -87,15 +89,6 @@ body {
     background-color: #0066cce0;
 }
 
-
-div[name="Navbar"] {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    right: 0;
-    z-index: 100;
-
-}
 
 #card-wrapper {
     width: 100% !important;
@@ -205,6 +198,15 @@ div[name="Navbar"] {
 .empCountLabel {
     font-size: 20px !important;
     text-align: center !important;
+}
+
+.dd-container {
+    margin-right : 100px !important ;
+    margin-left : 100px !important ;
+}
 
 
+[name='SWCCImgLogo']{
+
+    margin : 0px 25px !important ;
 }
