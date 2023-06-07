@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Wait for the card-wrapper div to render successfully
     waitForWrapperRender();
 
-    $(".dd-container a").click(function () {
+    $(document).on('click' , ".dd-container a" , function () {
         changeLanguage()
     })
 
