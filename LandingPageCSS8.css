@@ -21,6 +21,7 @@ div[name="Sidebar"] {
     box-shadow: 0px 0px 30px #0066CC80 !important;
 }
 
+
 div[name="Sidebar"] * {
     font-family: 'SWCC-Medium' !important;
 }
@@ -34,10 +35,11 @@ div[name="Sidebar"] div {
 
 div[name="Navbar"] {
     position: fixed !important;
-    top: 0;
+    top: 48px !important;
     width: 100%;
     right: 0;
-    z-index: 100;
+    z-index : 1 !important ;
+ 
 
 }
 
@@ -45,34 +47,6 @@ a[name*="NoBorder"] {
     border: none !important;
 }
 
-a[name*="GovernanceButton"] {
-    border-radius: 15px !important;
-    background-image: linear-gradient(to right, #0066cc, #007efc, #5fafff) !important;
-    padding-bottom: 70px !important;
-    padding-top: 70px !important;
-    box-shadow: 0px 0px 10px #0066cc !important;
-    transition: filter 0.4s ease !important;
-    border: none !important;
-    transition: scale 0.3s ease, filter 0.3s ease !important;
-    padding: 20px !important;
-    margin-top: 20px;
-
-}
-
-span[name*="optionCard"] {
-    background: white !important;
-    border-radius: 20px !important;
-    box-shadow: 0px 0px 15px #0066CC80 !important;
-}
-
-div[name="Table"]:has(a[name*="GovernanceButton"]) {
-    padding: 20px !important;
-}
-
-a[name*="GovernanceButton"]:hover {
-    filter: opacity(0.7) !important;
-    scale: 1.05;
-}
 
 div[name*="LandingPage"] {
     background: #EBF3FD !important;
@@ -101,7 +75,7 @@ div[name="Sidebar"] {
     right: 0 !important;
     width: 330px !important;
     top: 160px !important;
-    z-index: 100 !important;
+    z-index: 1 !important;
     border-top-left-radius: 20px !important;
     box-shadow: 0px 0px 30px #0066CC80 !important;
 }
@@ -110,53 +84,6 @@ div[name="Sidebar"] div {
     background-color: #0066cc !important;
     border-top-left-radius: 20px !important;
 
-}
-
-div[name="Navbar"] {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    right: 0;
-    z-index: 100;
-
-}
-
-.toolbars,
-.single {
-    display: none !important;
-}
-
-a[name*="NoBorder"] {
-    border: none !important;
-}
-
-a[name*="GovernanceButton"] {
-    border-radius: 15px !important;
-    background-image: linear-gradient(to right, #0066cc, #1883ee, #5fafff) !important;
-    padding-bottom: 70px !important;
-    padding-top: 70px !important;
-    box-shadow: 0px 0px 10px #0066cc !important;
-    transition: filter 0.4s ease !important;
-    border: none !important;
-    transition: scale 0.3s ease, filter 0.3s ease !important;
-    padding: 20px !important;
-    margin-top: 20px;
-
-}
-
-span[name*="optionCard"] {
-    background: white !important;
-    border-radius: 20px !important;
-    box-shadow: 0px 0px 15px #0066CC80 !important;
-}
-
-div[name="Table"]:has(a[name*="GovernanceButton"]) {
-    padding: 20px !important;
-}
-
-a[name*="GovernanceButton"]:hover {
-    filter: opacity(0.7) !important;
-    scale: 1.05;
 }
 
 div[name*="LandingPage"] {
@@ -296,17 +223,7 @@ div[name="RequestsInventory"] .grid-body {
     background-color: #0066cce0;
 }
 
-div[name="Sidebar"] {
-    background-color: #0066cc !important;
-    height: 100vh !important;
-    position: fixed !important;
-    right: 0 !important;
-    width: 330px !important;
-    top: 160px !important;
-    z-index: 100 !important;
-    border-top-left-radius: 20px !important;
-    box-shadow: 0px 0px 30px #0066CC80 !important;
-}
+
 
 div[name="Sidebar"] div {
     background-color: #0066cc !important;
@@ -314,14 +231,6 @@ div[name="Sidebar"] div {
 
 }
 
-div[name="Navbar"] {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    right: 0;
-    z-index: 100;
-
-}
 
 a[name*="NoBorder"] {
     border: none !important;
@@ -375,17 +284,6 @@ body {
     background-color: #EBF3FD !important;
 }
 
-div[name="Sidebar"] {
-    background-color: #0066cc !important;
-    height: 100vh !important;
-    position: fixed !important;
-    right: 0 !important;
-    width: 330px !important;
-    top: 160px !important;
-    z-index: 100 !important;
-    border-top-left-radius: 20px !important;
-    box-shadow: 0px 0px 30px #0066CC80 !important;
-}
 
 div[name="Sidebar"] div {
     background-color: #0066cc !important;
@@ -393,14 +291,6 @@ div[name="Sidebar"] div {
 
 }
 
-div[name="Navbar"] {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    right: 0;
-    z-index: 100;
-
-}
 
 .toolbars,
 .single {
@@ -872,4 +762,18 @@ div[name*="Worklist Card WT"] span.text-underline {
     background: white !important;
     color: #06c !important;
     border: 1px solid #06c !important;
+}
+
+
+[name="TranslatorHeader"] {
+
+    position : fixed !important;
+    top : 0 ;
+    left :0  ;
+    z-index : 100 !important ;
+}
+
+.dd-container {
+    margin-right : 100px !important ;
+    margin-left : 100px !important ;
 }
