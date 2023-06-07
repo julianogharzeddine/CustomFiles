@@ -3,20 +3,26 @@ $(document).ready(function () {
     // Wait for the card-wrapper div to render successfully
     waitForWrapperRender();
 
-    $(".dd-container a").on("click", () => changeLanguage())
+    $(".dd-container a").click(function () {
+        changeLanguage()
+    })
 
 })
 
 
-function changeLanguage(){
-    var lang = localStorage.getItem("selected_language")
-  
-    if(lang=="en-US"){
-      translateToArabic()
-    }else if(lang == 'ar-SA'){
-      translateToEnglish()
-    }
-  }
+function changeLanguage() {
+
+    setTimeout(function () {
+        var lang = localStorage.getItem("selected_language")
+
+        if (lang == "en-US") {
+            translateToArabic()
+        } else if (lang == 'ar-SA') {
+            translateToEnglish()
+        }
+    }, 2000)
+
+}
 
 function renderCards() {
 
@@ -107,7 +113,7 @@ function translateToEnglish() {
     $('#Research').text("Research")
     $("#Maintenance").text("Maintenance")
     $('#LegalAffairs').text("Legal Affairs")
-    $('.cardTitle').css('transform' , 'scale(0.8)')
+    $('.cardTitle').css('transform', 'scale(0.8)')
 }
 
 function translateToArabic() {
@@ -122,7 +128,6 @@ function translateToArabic() {
     $('#Research').text("الأبحاث")
     $("#Maintenance").text("الصيانة")
     $('#LegalAffairs').text("الشؤون القانونية")
-
-    $('.cardTitle').css('transform' , 'scale(1.05)')
+    $('.cardTitle').css('transform', 'scale(1.05)')
 
 }
