@@ -11,7 +11,7 @@
 
 div[name="Sidebar"] {
     background-color: #0066cc !important;
-    height: 100vh!important;
+    height: 100vh !important;
     position: fixed !important;
     right: 0 !important;
     width: 330px !important;
@@ -22,7 +22,7 @@ div[name="Sidebar"] {
 }
 
 div[name="Sidebar"] * {
-  font-family : 'SWCC-Medium' !important ;
+    font-family: 'SWCC-Medium' !important;
 }
 
 
@@ -38,58 +38,59 @@ div[name="Navbar"] {
     width: 100%;
     right: 0;
     z-index: 100;
-    
+
 }
 
 a[name*="NoBorder"] {
     border: none !important;
 }
+
 a[name*="GovernanceButton"] {
     border-radius: 15px !important;
-    background-image: linear-gradient(to right,#0066cc,#007efc,#5fafff) !important;
+    background-image: linear-gradient(to right, #0066cc, #007efc, #5fafff) !important;
     padding-bottom: 70px !important;
     padding-top: 70px !important;
     box-shadow: 0px 0px 10px #0066cc !important;
     transition: filter 0.4s ease !important;
-    border : none !important ;
-    transition : scale 0.3s ease , filter 0.3s ease !important ;
-    padding : 20px !important ;
-    margin-top : 20px ;
-  
+    border: none !important;
+    transition: scale 0.3s ease, filter 0.3s ease !important;
+    padding: 20px !important;
+    margin-top: 20px;
+
 }
 
-span[name*="optionCard"]{
+span[name*="optionCard"] {
     background: white !important;
     border-radius: 20px !important;
     box-shadow: 0px 0px 15px #0066CC80 !important;
 }
 
 div[name="Table"]:has(a[name*="GovernanceButton"]) {
-    padding : 20px !important ;
+    padding: 20px !important;
 }
 
 a[name*="GovernanceButton"]:hover {
-    filter : opacity(0.7) !important ;
-    scale : 1.05;
+    filter: opacity(0.7) !important;
+    scale: 1.05;
 }
 
-div[name*="LandingPage"]{
-    background : #EBF3FD !important ;
+div[name*="LandingPage"] {
+    background: #EBF3FD !important;
 }
 
 body {
-    background : #EBF3FD !important ;
+    background: #EBF3FD !important;
 }
 
 .runtime-form {
-    position : absolute  !important ;
-    top : 160px ;
-    left : 5% !important ;
-    width : 70% !important ;
+    position: absolute !important;
+    top: 160px;
+    left: 5% !important;
+    width: 70% !important;
 }
 
 .form {
-background-color : #EBF3FD !important ;
+    background-color: #EBF3FD !important;
 
 }
 
@@ -120,8 +121,9 @@ div[name="Navbar"] {
 
 }
 
-.toolbars , .single {
- display : none !important ;
+.toolbars,
+.single {
+    display: none !important;
 }
 
 a[name*="NoBorder"] {
@@ -180,11 +182,11 @@ body {
 .toolbar-wrapper {
     height: 0px !important;
     display: none !important;
-    background : #EBF3FD !important;
-    padding : 0px !important ;
+    background: #EBF3FD !important;
+    padding: 0px !important;
 }
 
-  
+
 .cardItem {
     padding: 6px;
     width: 90%;
@@ -192,7 +194,7 @@ body {
     box-shadow: 0px 0px 20px #0066CC40;
     height: 200px;
     position: relative;
-      background : #ffffff !important ;
+    background: #ffffff !important;
 }
 
 .cardHeader {
@@ -212,25 +214,25 @@ body {
 .investNo a {
     color: #0066CC;
     font-weight: bold;
-    font-size :16px !important ;
+    font-size: 16px !important;
 }
 
 .date {
     color: #0066cc;
     font-weight: bold;
-    font-size : 16px !important ;
+    font-size: 16px !important;
 }
 
 .cardItem p {
     width: 50%;
     text-align: center;
-  
+
 }
 
 .labelVal {
     color: #004687 !important;
-    font-size : 15px !important;
-    font-weight : bold !important ;
+    font-size: 15px !important;
+    font-weight: bold !important;
 }
 
 .status {
@@ -241,14 +243,14 @@ body {
 
 
 #card-wrapper {
-    
-    padding :20px;
-    display : grid !important;
-    grid-template-columns : repeat(2 , 1fr);
-    place-items : center;
+
+    padding: 20px;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
     grid-row-gap: 20px;
-    max-height : 600px;
-    overflow-y : scroll ;
+    max-height: 600px;
+    overflow-y: scroll;
 
 }
 
@@ -275,101 +277,23 @@ div[name="RequestsInventory"] .grid-body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+    width: 10px;
+    height: 10px;
 }
 
 
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0066cc; 
-  border-radius: 5px;
+    background-color: #0066cc;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color:  #0066cce0;
-}
-
-div[name="Sidebar"] {
-    background-color: #0066cc !important;
-    height: 100vh!important;
-    position: fixed !important;
-    right: 0 !important;
-    width: 330px !important;
-    top: 160px !important;
-    z-index: 100 !important;
-    border-top-left-radius: 20px !important;
-    box-shadow: 0px 0px 30px #0066CC80 !important;
-}
-
-div[name="Sidebar"] div {
-    background-color: #0066cc !important;
-    border-top-left-radius: 20px !important;
-
-}
-
-div[name="Navbar"] {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    right: 0;
-    z-index: 100;
-    
-}
-
-a[name*="NoBorder"] {
-    border: none !important;
-}
-a[name*="GovernanceButton"] {
-    border-radius: 15px !important;
-    background-image: linear-gradient(to right,#0066cc,#007efc,#5fafff) !important;
-    padding-bottom: 70px !important;
-    padding-top: 70px !important;
-    box-shadow: 0px 0px 10px #0066cc !important;
-    transition: filter 0.4s ease !important;
-    border : none !important ;
-    transition : scale 0.3s ease , filter 0.3s ease !important ;
-    padding : 20px !important ;
-    margin-top : 20px ;
-  
-}
-
-span[name*="optionCard"]{
-    background: white !important;
-    border-radius: 20px !important;
-    box-shadow: 0px 0px 15px #0066CC80 !important;
-}
-
-div[name="Table"]:has(a[name*="GovernanceButton"]) {
-    padding : 20px !important ;
-}
-
-a[name*="GovernanceButton"]:hover {
-    filter : opacity(0.7) !important ;
-    scale : 1.05;
-}
-
-div[name*="LandingPage"]{
-    background : #EBF3FD !important ;
-}
-
-body {
-    background : #EBF3FD !important ;
-}
-
-.runtime-form {
-    position : absolute  !important ;
-    top : 160px ;
-    left : 5% !important ;
-    width : 70% !important ;
-}
-
-.form {
-background-color : #EBF3FD !important ;
+    background-color: #0066cce0;
 }
 
 div[name="Sidebar"] {
@@ -399,8 +323,88 @@ div[name="Navbar"] {
 
 }
 
-.toolbars , .single {
- display : none !important ;
+a[name*="NoBorder"] {
+    border: none !important;
+}
+
+a[name*="GovernanceButton"] {
+    border-radius: 15px !important;
+    background-image: linear-gradient(to right, #0066cc, #007efc, #5fafff) !important;
+    padding-bottom: 70px !important;
+    padding-top: 70px !important;
+    box-shadow: 0px 0px 10px #0066cc !important;
+    transition: filter 0.4s ease !important;
+    border: none !important;
+    transition: scale 0.3s ease, filter 0.3s ease !important;
+    padding: 20px !important;
+    margin-top: 20px;
+
+}
+
+span[name*="optionCard"] {
+    background: white !important;
+    border-radius: 20px !important;
+    box-shadow: 0px 0px 15px #0066CC80 !important;
+}
+
+div[name="Table"]:has(a[name*="GovernanceButton"]) {
+    padding: 20px !important;
+}
+
+a[name*="GovernanceButton"]:hover {
+    filter: opacity(0.7) !important;
+    scale: 1.05;
+}
+
+div[name*="LandingPage"] {
+    background: #EBF3FD !important;
+}
+
+body {
+    background: #EBF3FD !important;
+}
+
+.runtime-form {
+    position: absolute !important;
+    top: 160px;
+    left: 5% !important;
+    width: 70% !important;
+}
+
+.form {
+    background-color: #EBF3FD !important;
+}
+
+div[name="Sidebar"] {
+    background-color: #0066cc !important;
+    height: 100vh !important;
+    position: fixed !important;
+    right: 0 !important;
+    width: 330px !important;
+    top: 160px !important;
+    z-index: 100 !important;
+    border-top-left-radius: 20px !important;
+    box-shadow: 0px 0px 30px #0066CC80 !important;
+}
+
+div[name="Sidebar"] div {
+    background-color: #0066cc !important;
+    border-top-left-radius: 20px !important;
+
+}
+
+div[name="Navbar"] {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    right: 0;
+    z-index: 100;
+
+}
+
+.toolbars,
+.single {
+    display: none !important;
 }
 
 a[name*="NoBorder"] {
@@ -459,11 +463,11 @@ body {
 .toolbar-wrapper {
     height: 0px !important;
     display: none !important;
-    background : #EBF3FD !important;
-    padding : 0px !important ;
+    background: #EBF3FD !important;
+    padding: 0px !important;
 }
 
-  
+
 #legalservices-card-wrapper .cardItem {
     padding: 6px;
     width: 90%;
@@ -471,10 +475,10 @@ body {
     box-shadow: 0px 0px 20px #0066CC40;
     height: 200px;
     position: relative;
-    background : #ffffff !important ;
+    background: #ffffff !important;
 }
 
-    
+
 .cardItem {
     padding: 6px;
     width: 90%;
@@ -482,7 +486,7 @@ body {
     box-shadow: 0px 0px 20px #0066CC40;
     height: 200px;
     position: relative;
-    background : #ffffff !important ;
+    background: #ffffff !important;
 }
 
 .cardHeader {
@@ -502,25 +506,25 @@ body {
 .investNo {
     color: #0066CC;
     font-weight: bold;
-    font-size :16px !important ;
+    font-size: 16px !important;
 }
 
 .date {
     color: #0066cc;
     font-weight: bold;
-    font-size : 16px !important ;
+    font-size: 16px !important;
 }
 
 .cardItem p {
     width: 50%;
     text-align: center;
-  
+
 }
 
 .labelVal {
     color: #004687 !important;
-    font-size : 15px !important;
-    font-weight : bold !important ;
+    font-size: 15px !important;
+    font-weight: bold !important;
 }
 
 .status {
@@ -531,14 +535,14 @@ body {
 
 
 #card-wrapper {
-    width : 100% !important ;
-    padding :20px;
-    display : grid !important;
-    grid-template-columns : repeat(2 , 1fr);
-    place-items : center;
+    width: 100% !important;
+    padding: 20px;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
     grid-row-gap: 20px;
-    max-height : 600px;
-    overflow-y : scroll ;
+    max-height: 600px;
+    overflow-y: scroll;
 
 }
 
@@ -558,7 +562,7 @@ body {
 .labelTitle {
     font-size: 20px !important;
     font-weight: bold;
-    color : #8E8E8E !important ;
+    color: #8E8E8E !important;
 
 }
 
@@ -567,53 +571,53 @@ div[name="RequestsInventory"] .grid-body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+    width: 10px;
+    height: 10px;
 }
 
 
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0066cc; 
-  border-radius: 5px;
+    background-color: #0066cc;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color:  #0066cce0;
+    background-color: #0066cce0;
 }
-        
-div[name="InvestigationButtonsView"]   {
-padding : 30px !important ;
-background :  #EBF3FD  !important ;
+
+div[name="InvestigationButtonsView"] {
+    padding: 30px !important;
+    background: #EBF3FD !important;
 }
 
 
 
 .dateWrapper {
-    display : flex !important ;
-    gap : 8px !important ;
-    place-items : center !important;
+    display: flex !important;
+    gap: 8px !important;
+    place-items: center !important;
 }
 
 #reqCounter {
-    width : 100%;
+    width: 100%;
     display: flex !important;
     flex-direction: row !important;
-    justify-content : flex-end ;
+    justify-content: flex-end;
     gap: 40px !important;
     height: fit-content !important;
-    padding : 20px 5% 20px 0px !important ;
+    padding: 20px 5% 20px 0px !important;
     box-sizing: border-box !important;
 }
 
 .counterCircle {
     display: flex !important;
-    justify-content : center !important;
-    place-items : center !important;
+    justify-content: center !important;
+    place-items: center !important;
     height: 40px !important;
     width: 40px !important;
     padding: 3px !important;
@@ -622,7 +626,7 @@ background :  #EBF3FD  !important ;
     box-sizing: border-box !important;
     color: #f96523 !important;
     font-weight: bold !important;
-    font-size : 22px !important;
+    font-size: 22px !important;
 }
 
 .counterCard {
@@ -637,132 +641,137 @@ background :  #EBF3FD  !important ;
     width: 170px !important;
     height: 53px !important;
     box-shadow: 0px 0px 15px #0066CC80;
-    cursor : pointer
+    cursor: pointer
 }
 
 .counterLabel {
     color: #505050 !important;
-    font-size : 23px !important;
+    font-size: 23px !important;
 }
 
-     #legalservices-card-wrapper{
-      width: 100% !important;
- 
-      display: grid !important;
-      grid-template-columns: repeat(3, 1fr) !important;
-      place-items: center !important;
-      grid-row-gap : 30px !important;
-      overflow-y: auto !important;
-      direction: rtl !important;
-      padding : 30px;
-  }
-  
-  .sectionBrowser {
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: center !important;
-      place-items: center !important;
-      background : #EBF3FD !important ;
-  }
+#legalservices-card-wrapper {
+    width: 100% !important;
 
-      
-  .sectionBrowserTitle {
-      font-size: 40px !important;
-      font-weight: bold !important;
-      text-align : center !important ;
-  }
-  
-
-    #legalservices-card-wrapper .cardItem {
-      padding: 20px !important;
-      height: 300px !important;
-      border-radius: 2.5ex !important;
-      box-shadow: 0px 13px 25px #0000002B !important;
-      background: #ffffff !important;
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: space-between !important;
-      place-items: center !important;
-      padding-bottom: 25px !important;
-      box-sizing: border-box !important;
-  }
-
-   #InvestigationCards .cardItem {
-      padding: 20px !important;
-      height: 300px !important;
-      border-radius: 2.5ex !important;
-      box-shadow: 0px 13px 25px #0000002B !important;
-      background: #ffffff !important;
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: space-between !important;
-      place-items: center !important;
-      padding-bottom: 25px !important;
-      box-sizing: border-box !important;
-  }
-
-  #InvestigationCards{
-      width:90% !important;
-      display: grid !important;
-      grid-template-columns: repeat(3, 1fr) !important;
-      place-items: center !important;
-      grid-row-gap : 30px !important;
-      overflow-y: auto !important;
-      direction: rtl !important;
-      padding : 30px;
-  }
-  
-  .cardItem .titleImage {
-      width: 100% !important;
-      height: 120px !important;
-      border-radius: 25px !important;
-      max-width : 300px !important;
-  }
-  
-  .cardTitle {
-      width: 192px !important;
-      text-align: center !important;
-      letter-spacing: 0px !important;
-      color: #2E2E2E !important;
-      font-size: 23px !important;
-      font-weight: bold !important;
-  }
-  
-  .goToCategoryButton {
-      width: 70% !important;
-      max-width : 180px;
-      height: 45px !important;
-      color: white !important;
-      font-size: 17px !important;
-      background: #0066CC 0% 0% no-repeat padding-box !important;
-      border-radius: 30px !important;
-      display: flex !important;
-      place-content: center !important;
-      align-items: center !important;
-      box-shadow: 0px 9px 17px #00000057 !important;
-      text-decoration: none !important;
-      transition : filter 0.2s ease ;
-  }
-  
-  .goToCategoryButton:hover {
-      filter: opacity(0.8)
-  }
-
-[name*='View']{
-     background :   #EBF3FD !important ;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    place-items: center !important;
+    grid-row-gap: 30px !important;
+    overflow-y: auto !important;
+    direction: rtl !important;
+    padding: 30px;
 }
 
-[name*='hiddenButton']{
-    visibility : hidden !important ;
+.sectionBrowser {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    place-items: center !important;
+    background: #EBF3FD !important;
 }
 
 
+.sectionBrowserTitle {
+    font-size: 40px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
 
-  div[name*="Worklist Card WT"] table.nav {
+
+#legalservices-card-wrapper .cardItem {
+    padding: 20px !important;
+    height: 300px !important;
+    border-radius: 2.5ex !important;
+    box-shadow: 0px 13px 25px #0000002B !important;
+    background: #ffffff !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    place-items: center !important;
+    padding-bottom: 25px !important;
+    box-sizing: border-box !important;
+}
+
+#InvestigationCards .cardItem {
+    padding: 20px !important;
+    height: 300px !important;
+    border-radius: 2.5ex !important;
+    box-shadow: 0px 13px 25px #0000002B !important;
+    background: #ffffff !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    place-items: center !important;
+    padding-bottom: 25px !important;
+    box-sizing: border-box !important;
+}
+
+#InvestigationCards {
+    width: 90% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    place-items: center !important;
+    grid-row-gap: 30px !important;
+    overflow-y: auto !important;
+    direction: rtl !important;
+    padding: 30px;
+}
+
+.cardItem .titleImage {
+    width: 100% !important;
+    height: 120px !important;
+    border-radius: 25px !important;
+    max-width: 300px !important;
+}
+
+.cardTitle {
+    width: 192px !important;
+    text-align: center !important;
+    letter-spacing: 0px !important;
+    color: #2E2E2E !important;
+    font-size: 23px !important;
+    font-weight: bold !important;
+}
+
+.goToCategoryButton {
+    width: 70% !important;
+    max-width: 180px;
+    height: 45px !important;
+    color: white !important;
+    font-size: 17px !important;
+    background: #0066CC 0% 0% no-repeat padding-box !important;
+    border-radius: 30px !important;
+    display: flex !important;
+    place-content: center !important;
+    align-items: center !important;
+    box-shadow: 0px 9px 17px #00000057 !important;
+    text-decoration: none !important;
+    transition: filter 0.2s ease;
+}
+
+.goToCategoryButton:hover {
+    filter: opacity(0.8)
+}
+
+[name*='View'] {
+    background: #EBF3FD !important;
+}
+
+[name*='hiddenButton'] {
+    visibility: hidden !important;
+}
+
+
+
+div[name*="Worklist Card WT"] table.nav {
     margin-bottom: 2.5ex;
     box-shadow: 0px 0px 15px #0066CC40;
     background: white !important
 }
+
+div[name*="Worklist Card WT"] * {
+    overflow: hidden !important;
+}
+
 
 div[name*="Worklist Card WT"] .SourceCodeFormsControlsWorklist {
     background: #EBF3FD !important;
@@ -785,10 +794,9 @@ div[name*="Worklist Card WT"] .WorklistItemSectionCell {
 
 div[name*="Worklist Card WT"] .worklist-grid-column-header-cell-text {
     font-size: 2ex !important;
-   box-sizing : border-box !important ;
-    color: black !important;
+    box-sizing: border-box !important;
     font-weight: bold !important;
-    text-align: center !important;
+    text-align: left !important;
 }
 
 div[name*="Worklist Card WT"] .WorkListGridHeader>tr {
@@ -800,31 +808,35 @@ div[name*="Worklist Card WT"] .nav tr {
     background: white !important;
 } */
 
-div[name*="Worklist Card WT"] .nav tr:nth-child(even) {
-    background: lightcyan !important;
+div[name*="Worklist Card WT"] .WorklistItemGridRow:nth-child(even) {
+    background: #eeeeee !important;
 }
 
-div[name*="Worklist Card WT"] tr.WorklistItemGridRow td {
+div[name*="Worklist Card WT"] .WorklistItemGridRow:nth-child(odd) {
+    background: white !important;
+}
+
+
+/*div[name*="Worklist Card WT"] tr.WorklistItemGridRow td {
     background-color: white !important;
 }
-
+*/
 div[name*="Worklist Card WT"] .WorkListGridHeader th span {
     font-size: 2ex !important;
     font-weight: bold !important;
-    color: black !important;
-  
+    color: #06c !important;
+
 }
 
 div[name*="Worklist Card WT"] .worklistToolbarHeaderTextWrapper span {
     font-size: 3.4ex !important;
-  
     font-weight: bold !important;
     color: #06c !important;
 }
 
 div[name*="Worklist Card WT"] td.worklistToolbarHeaderTextWrapper {
-    padding: 1.5ex !important;
-   box-sizing : border-box !important ;
+    padding: 1.2ex !important;
+
 }
 
 div[name*="Worklist Card WT"] .SourceCodeFormsControlsWorklist {
@@ -833,7 +845,7 @@ div[name*="Worklist Card WT"] .SourceCodeFormsControlsWorklist {
 
 div[name*="Worklist Card WT"] .SourceCodeFormsControlsWorklist {
     padding: 1.7ex;
-   box-sizing : border-box !important ;
+    box-sizing: border-box !important;
 }
 
 div[name*="Worklist Card WT"] table.nav {
@@ -844,10 +856,20 @@ div[name*="Worklist Card WT"] .WorkListGridTableBody {
     border-radius: 0ex 0ex 2.5ex 2.5ex;
 }
 
-div[name*="Worklist Card WT"]  span.text-underline {
+div[name*="Worklist Card WT"] span.text-underline {
     font-size: 1.9ex !important;
 }
 
-td.WorklistItemGridCell {
-    text-align: center;
+
+
+.LoadMoreHyperlink {
+    background: #06c !important;
+    color: white !important;
+
+}
+
+.LoadMoreHyperlink:hover {
+    background: white !important;
+    color: #06c !important;
+    border: 1px solid #06c !important;
 }
