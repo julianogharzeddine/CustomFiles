@@ -21,6 +21,11 @@ div[name="Sidebar"] {
     box-shadow: 0px 0px 30px #0066CC80 !important;
 }
 
+div[name="Sidebar"] * {
+  font-family : 'SWCC-Medium' !important ;
+}
+
+
 div[name="Sidebar"] div {
     background-color: #0066cc !important;
     border-top-left-radius: 20px !important;
