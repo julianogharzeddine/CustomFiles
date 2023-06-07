@@ -24,7 +24,7 @@ $(document).ready(function () {
 
    $('#card-wrapper').css('visibility' , 'visible')
    $('#card-wrapper').css('height' , 'fit-content')
-   
+
    renderInvestCards()
 
   })
@@ -57,7 +57,6 @@ function renderInvestOptions(){
   
   `)
 }
-
 
 
 
@@ -194,11 +193,6 @@ function renderLegalServicesCards() {
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/architecture.png" class='titleImage'>
       <p class="cardTitle" id='actionCreateInvestigation'>إجراء طلب تحقيق</p>
       <a class='goToCategoryButton knowMore' id='createInvestigationButton'>تعرّف على المزيد</a>
-  </div>
-  <div class="cardItem">
-      <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/operations.png" class='titleImage'>
-      <p class="cardTitle" id='actionCreateComplaint'>تقديم شكوى</p>
-      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/research.png" class='titleImage'>
