@@ -16,9 +16,9 @@ function changeLanguage() {
         var lang = localStorage.getItem("selected_language")
 
         if (lang == "en-US") {
-            translateToArabic()
+           translateToEnglish()
         } else if (lang == 'ar-SA') {
-            translateToEnglish()
+           translateToArabic()
         }
     }, 2000)
 
