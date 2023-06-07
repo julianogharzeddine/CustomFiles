@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Wait for the card-wrapper div to render successfully
     waitForWrapperRender();
 
-    $(document).on('click' , ".dd-container a" , function () {
+    $(document).on('click', ".dd-container a", function () {
         changeLanguage()
     })
 
@@ -16,11 +16,11 @@ function changeLanguage() {
         var lang = localStorage.getItem("selected_language")
 
         if (lang == "en-US") {
-           translateToEnglish()
+            translateToEnglish()
         } else if (lang == 'ar-SA') {
-           translateToArabic()
+            translateToArabic()
         }
-    }, 2000)
+    }, 500)
 
 }
 
