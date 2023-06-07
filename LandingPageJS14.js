@@ -21,8 +21,17 @@ $(document).ready(function () {
   $(document).on('click', '#showAllInvestigations', function () {
     $("[name='showAllInvestigations hiddenButton']").trigger('click')
    createReqCounters()
+
+   $('#card-wrapper').css('visibility' , 'visible')
+   $('#card-wrapper').css('height' , 'fit-content')
+   
    renderInvestCards()
 
+  })
+
+  $('[name="MyTasks ButtonNoBorder"]').click(function(){
+    $('#card-wrapper').css('visibility' , 'hidden')
+    $('#card-wrapper').css('height' , '0')
   })
 })
 
