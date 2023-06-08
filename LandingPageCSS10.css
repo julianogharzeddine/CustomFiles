@@ -279,7 +279,7 @@ div[name="InvestigationButtonsView"] {
     place-items: center !important;
     grid-row-gap: 30px !important;
     overflow-y: auto !important;
-    direction: rtl !important;
+    direction: rtl ;
     padding: 30px;
 }
 
