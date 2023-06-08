@@ -2,6 +2,11 @@ var dictionary;
 
 $(document).ready(function () {
 
+
+  $(document).click(function(){
+    translate()
+  })
+  
   dictionary = [
     { "English": "Legal Affairs", "Arabic": "الشؤون القانونية", "French": "Aff. Juridiques" },
     { "English": "Proceed Against Institution", "Arabic": "إجراء ضد مؤسسة", "French": "Procéder Contre Inst." },
@@ -262,7 +267,7 @@ function translate() {
       $('.runtime-form').css('left' , '')
       $('.runtime-form').css('left' , '20%')
       $('.counterCard').css('flex-direction' , 'row-reverse')
-      $('.card-rows').css('flex-direction' , 'row')
+      $('.card-rows').css('flex-direction' , 'row-reverse')
       $('#legalservices-card-wrapper').css('direction' , 'ltr')
       $('#card-wrapper').css('direction' , 'ltr')
       break
@@ -273,7 +278,7 @@ function translate() {
       $('[name="Sidebar"]').css('left' , '')
       $('.runtime-form').css('left' , '5%')
       $('.counterCard').css('flex-direction' , 'row')
-      $('.card-rows').css('flex-direction' , 'row-reverse')
+      $('.card-rows').css('flex-direction' , 'row')
       $('#legalservices-card-wrapper').css('direction' , 'rtl')
       $('#card-wrapper').css('direction' , 'rtl')
       break
@@ -284,7 +289,7 @@ function translate() {
       $('.runtime-form').css('left' , '')
       $('.runtime-form').css('left' , '20%')
       $('.counterCard').css('flex-direction' , 'row-reverse')
-      $('.card-rows').css('flex-direction' , 'row')
+      $('.card-rows').css('flex-direction' , 'row-reverse')
       $('#legalservices-card-wrapper').css('direction' , 'ltr')
       $('#card-wrapper').css('direction' , 'ltr')
       break
