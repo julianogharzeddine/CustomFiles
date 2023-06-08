@@ -14,7 +14,7 @@ $(document).ready(function () {
     { "English": "Request Investigation", "Arabic": "إجراء طلب تحقيق", "French": "Demander Enquête" },
     { "English": "Conflict Of Interest Procedure", "Arabic": "إجراء تضارب المصالح", "French": "Procédure Conflit Intérêt" },
     { "English": "Contract Study Procedures", "Arabic": "إجراءات دراسة العقود", "French": "Procédures Étude Contrats" },
-    { "English": "Learn More", "Arabic": "تعرّف على المزيد", "French": "En Savoir Plus" },
+    { "English": "Click Here", "Arabic": "إضغط هنا", "French": "Cliquer" },
     { "English": "Conduct Investigation", "Arabic": "إجراء تحقيق", "French": "Mener Enquête" },
     { "English": "Investigation Requests", "Arabic": "طلبات التحقيق", "French": "Demandes D'Enquête" },
     { "English": "Submit Complaint", "Arabic": "تقديم شكوى", "French": "Soumettre Plainte" },
@@ -61,6 +61,8 @@ $(document).ready(function () {
     $('#card-wrapper').css('visibility', 'visible')
     $('#card-wrapper').css('height', 'fit-content')
 
+ 
+
     renderInvestCards()
 
   })
@@ -81,17 +83,17 @@ function renderInvestOptions() {
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/cardImg.png" class='titleImage'>
       <p class="cardTitle translatable">طلبات التحقيق</p>
-      <a class='goToCategoryButton translatable' id='showAllInvestigations'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton translatable' id='showAllInvestigations'>إضغط هنا</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/architecture.png" class='titleImage'>
       <p class="cardTitle translatable">إجراء طلب تحقيق</p>
-      <a class='goToCategoryButton translatable' href='https://srv-k2five/Runtime/Runtime/Form/Submit.Form/'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton translatable' href='https://srv-k2five/Runtime/Runtime/Form/Submit.Form/'>إضغط هنا</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/operations.png" class='titleImage'>
       <p class="cardTitle translatable">تقديم شكوى</p>
-      <a class='goToCategoryButton translatable' href='https://srv-k2five/Runtime/Runtime/Form/InitialForm.Form/'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton translatable' href='https://srv-k2five/Runtime/Runtime/Form/InitialForm.Form/'>إضغط هنا</a>
   </div>
   
   `)
@@ -219,27 +221,27 @@ function renderLegalServicesCards() {
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/legalAffairs.png" class='titleImage'>
       <p class="cardTitle translatable">إجراء ضد مؤسسة</p>
-      <a class='goToCategoryButton translatable'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton translatable'>إضغط هنا</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/cardImg.png" class='titleImage'>
       <p class="cardTitle translatable">إجراء مع المؤسسة</p>
-      <a class='goToCategoryButton translatable'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton translatable'>إضغط هنا</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/architecture.png" class='titleImage'>
       <p class="cardTitle translatable">إجراء طلب تحقيق</p>
-      <a class='goToCategoryButton translatable' id='createInvestigationButton'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton translatable' id='createInvestigationButton'>إضغط هنا</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/research.png" class='titleImage'>
       <p class="cardTitle translatable">إجراء تضارب المصالح</p>
-      <a class='goToCategoryButton translatable'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton translatable'>إضغط هنا</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/maintenance.png" class='titleImage'>
       <p class="cardTitle translatable">إجراءات دراسة العقود</p>
-      <a class='goToCategoryButton translatable'>تعرّف على المزيد</a>
+      <a class='goToCategoryButton translatable'>إضغط هنا</a>
   </div>
   `)
 }
@@ -268,6 +270,8 @@ function translate() {
       $('.runtime-form').css('left' , '20%')
       $('.counterCard').css('flex-direction' , 'row-reverse')
       $('.card-rows').css('flex-direction' , 'row-reverse')
+      $('.cardHeader').css('flex-direction' , 'row')
+      $('.dateWrapper').css('flex-direction' , 'row')
       $('#legalservices-card-wrapper').css('direction' , 'ltr')
       $('#card-wrapper').css('direction' , 'ltr')
       break
@@ -278,7 +282,9 @@ function translate() {
       $('[name="Sidebar"]').css('left' , '')
       $('.runtime-form').css('left' , '5%')
       $('.counterCard').css('flex-direction' , 'row')
-      $('.card-rows').css('flex-direction' , 'row')
+      $('.dateWrapper').css('flex-direction' , 'row-reverse')
+      $('.card-rows').css('flex-direction' , 'row-reverse')
+      $('.cardHeader').css('flex-direction' , 'row-reverse')
       $('#legalservices-card-wrapper').css('direction' , 'rtl')
       $('#card-wrapper').css('direction' , 'rtl')
       break
@@ -290,6 +296,8 @@ function translate() {
       $('.runtime-form').css('left' , '20%')
       $('.counterCard').css('flex-direction' , 'row-reverse')
       $('.card-rows').css('flex-direction' , 'row-reverse')
+      $('.cardHeader').css('flex-direction' , 'row')
+      $('.dateWrapper').css('flex-direction' , 'row')
       $('#legalservices-card-wrapper').css('direction' , 'ltr')
       $('#card-wrapper').css('direction' , 'ltr')
       break
@@ -298,7 +306,7 @@ function translate() {
   let toTranslate = $('.translatable')
 
   toTranslate.each(function () {
-    $(this).text(getFromDictionary(($(this).text()), targetLang))
+    $(this).text(getFromDictionary(($(this).text().trim()), targetLang))
   })
 }
 
