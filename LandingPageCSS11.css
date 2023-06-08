@@ -197,6 +197,7 @@ div[name="Navbar"] {
 
 .dateWrapper {
     display: flex !important;
+    flex-direction : row-reverse ;
     gap: 8px !important;
     place-items: center !important;
 }
@@ -226,7 +227,7 @@ div[name="InvestigationButtonsView"] {
     width: 100%;
     display: flex !important;
     flex-direction: row !important;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 40px !important;
     height: fit-content !important;
     padding: 20px 5% 20px 60px !important;
