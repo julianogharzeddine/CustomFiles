@@ -1,6 +1,26 @@
-
+var dictionary;
 
 $(document).ready(function () {
+
+  dictionary = [
+    { "English": "Legal Affairs", "Arabic": "الشؤون القانونية", "French": "Aff. Juridiques" },
+    { "English": "Proceed Against Institution", "Arabic": "إجراء ضد مؤسسة", "French": "Procéder Contre Inst." },
+    { "English": "Proceed With Institution", "Arabic": "إجراء مع المؤسسة", "French": "Procéder Avec Inst." },
+    { "English": "Request Investigation", "Arabic": "إجراء طلب تحقيق", "French": "Demander Enquête" },
+    { "English": "Conflict Of Interest Procedure", "Arabic": "إجراء تضارب المصالح", "French": "Procédure Conflit Intérêt" },
+    { "English": "Contract Study Procedures", "Arabic": "إجراءات دراسة العقود", "French": "Procédures Étude Contrats" },
+    { "English": "Learn More", "Arabic": "تعرّف على المزيد", "French": "En Savoir Plus" },
+    { "English": "Conduct Investigation", "Arabic": "إجراء تحقيق", "French": "Mener Enquête" },
+    { "English": "Investigation Requests", "Arabic": "طلبات التحقيق", "French": "Demandes D'Enquête" },
+    { "English": "Submit Complaint", "Arabic": "تقديم شكوى", "French": "Soumettre Plainte" },
+    { "English": "New", "Arabic": "الجديدة", "French": "Nouveau" },
+    { "English": "Active", "Arabic": "النشطة", "French": "Actif" },
+    { "English": "Completed", "Arabic": "المكتملة", "French": "Terminé" },
+    { "English": "Created By", "Arabic": "انشا من قبل", "French": "Créé Par" },
+    { "English": "Investigation Status", "Arabic": "حالة التحقيق", "French": "Statut Enquête" },
+    { "English": "Subject", "Arabic": "الموضوع", "French": "Sujet" }
+  ];
+
 
   // Wait for the card-wrapper div to render successfully
 
@@ -8,57 +28,69 @@ $(document).ready(function () {
     renderLegalServicesCards()
   }, 2000)
 
-  $('#createInvestigationButton').click(function () {
-    $("[name='showTalabatTahkik hiddenButton']").trigger('click')
+  // Language change listener
+
+  $(document).on('click', ".dd-container a", function () {
+    translate()
   })
 
+  // Showing Investigation Options
 
   $(document).on('click', '#createInvestigationButton', function () {
     $("[name='showTalabatTahkik hiddenButton']").trigger('click')
+
+    // Rendering Investigation buttons which shows the actions that can be taken
     renderInvestOptions()
   })
 
+  // Showing all the investigations in the custom cards
+
   $(document).on('click', '#showAllInvestigations', function () {
     $("[name='showAllInvestigations hiddenButton']").trigger('click')
-   createReqCounters()
 
-   $('#card-wrapper').css('visibility' , 'visible')
-   $('#card-wrapper').css('height' , 'fit-content')
+    // Creating the request counters
+    createReqCounters()
 
-   renderInvestCards()
+    // Hiding the custom cards
+
+    $('#card-wrapper').css('visibility', 'visible')
+    $('#card-wrapper').css('height', 'fit-content')
+
+    renderInvestCards()
 
   })
 
-  $('[name="MyTasks ButtonNoBorder"]').click(function(){
-    $('#card-wrapper').css('visibility' , 'hidden')
-    $('#card-wrapper').css('height' , '0')
+  // Hiding everything else when showing tasks
+
+  $('[name="MyTasks ButtonNoBorder"]').click(function () {
+    $('#card-wrapper').css('visibility', 'hidden')
+    $('#card-wrapper').css('height', '0')
   })
+
 })
 
-function renderInvestOptions(){
-  
+function renderInvestOptions() {
+
   $('#InvestigationCards').html("")
   $('#InvestigationCards').append(`
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/cardImg.png" class='titleImage'>
-      <p class="cardTitle">طلبات التحقيق</p>
-      <a class='goToCategoryButton knowMore' id='showAllInvestigations'>تعرّف على المزيد</a>
+      <p class="cardTitle translatable">طلبات التحقيق</p>
+      <a class='goToCategoryButton translatable' id='showAllInvestigations'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/architecture.png" class='titleImage'>
-      <p class="cardTitle">إجراء طلب تحقيق</p>
-      <a class='goToCategoryButton knowMore' id='createInvestigationButton' href='https://srv-k2five/Runtime/Runtime/Form/Submit.Form/'>تعرّف على المزيد</a>
+      <p class="cardTitle translatable">إجراء طلب تحقيق</p>
+      <a class='goToCategoryButton translatable' href='https://srv-k2five/Runtime/Runtime/Form/Submit.Form/'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/operations.png" class='titleImage'>
-      <p class="cardTitle">تقديم شكوى</p>
-      <a class='goToCategoryButton knowMore' href='https://srv-k2five/Runtime/Runtime/Form/InitialForm.Form/'>تعرّف على المزيد</a>
+      <p class="cardTitle translatable">تقديم شكوى</p>
+      <a class='goToCategoryButton translatable' href='https://srv-k2five/Runtime/Runtime/Form/InitialForm.Form/'>تعرّف على المزيد</a>
   </div>
   
   `)
 }
-
-
 
 function renderInvestCards() {
   var cardWrapper = $("#card-wrapper");
@@ -95,15 +127,15 @@ function renderInvestCards() {
           <div class="cardBody">
             <div class="card-rows">
               <p class="reqCreator labelVal">${creatorName}</p>
-              <p class="reqCreatorLabel labelTitle">انشا من قبل</p>
+              <p class="reqCreatorLabel labelTitle translatable">انشا من قبل</p>
             </div>
             <div class="card-rows">
               <p class="reqCreator labelVal">${investStatus}</p>
-              <p class="reqCreatorLabel labelTitle">حالة التحقيق</p>
+              <p class="reqCreatorLabel labelTitle translatable">حالة التحقيق</p>
             </div>
             <div class="card-rows">
               <p class="reqSubject labelVal">${subject}</p>
-              <p class="reqSubjectLabel labelTitle">الموضوع</p>
+              <p class="reqSubjectLabel labelTitle translatable">الموضوع</p>
             </div>
           </div>
         </div>
@@ -161,15 +193,15 @@ function createReqCounters() {
   let content = `
   <div class="Complete counterCard">
       <p id="completeCounter" class="counterCircle">${completedNo}</p>
-      <p class="counterLabel">المكتملة</p>
+      <p class="counterLabel translatable">المكتملة</p>
   </div>
   <div class="Active counterCard">
       <p id="activeCounter" class="counterCircle">${activeNo}</p>
-      <p class="counterLabel">النشطة</p>
+      <p class="counterLabel translatable">النشطة</p>
   </div>
   <div class="New counterCard">
       <p id="newCounter" class="counterCircle">${newNo}</p>
-      <p class="counterLabel">الجديدة</p>
+      <p class="counterLabel translatable">الجديدة</p>
   </div>
   `
   $("#reqCounter").html("")
@@ -181,28 +213,28 @@ function renderLegalServicesCards() {
   $('#legalservices-card-wrapper').append(`
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/legalAffairs.png" class='titleImage'>
-      <p class="cardTitle" id='actionAgainstCompany'>إجراء ضد مؤسسة</p>
-      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
+      <p class="cardTitle translatable">إجراء ضد مؤسسة</p>
+      <a class='goToCategoryButton translatable'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/cardImg.png" class='titleImage'>
-      <p class="cardTitle" id='actionWithCompany'>إجراء مع المؤسسة</p>
-      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
+      <p class="cardTitle translatable">إجراء مع المؤسسة</p>
+      <a class='goToCategoryButton translatable'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/architecture.png" class='titleImage'>
-      <p class="cardTitle" id='actionCreateInvestigation'>إجراء طلب تحقيق</p>
-      <a class='goToCategoryButton knowMore' id='createInvestigationButton'>تعرّف على المزيد</a>
+      <p class="cardTitle translatable">إجراء طلب تحقيق</p>
+      <a class='goToCategoryButton translatable' id='createInvestigationButton'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/research.png" class='titleImage'>
-      <p class="cardTitle" id='actionConflictOfInterest'>إجراء تضارب المصالح</p>
-      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
+      <p class="cardTitle translatable">إجراء تضارب المصالح</p>
+      <a class='goToCategoryButton translatable'>تعرّف على المزيد</a>
   </div>
   <div class="cardItem">
       <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/maintenance.png" class='titleImage'>
-      <p class="cardTitle" id='actionCreateStudy'>إجراءات دراسة العقود</p>
-      <a class='goToCategoryButton knowMore'>تعرّف على المزيد</a>
+      <p class="cardTitle translatable">إجراءات دراسة العقود</p>
+      <a class='goToCategoryButton translatable'>تعرّف على المزيد</a>
   </div>
   `)
 }
@@ -218,4 +250,39 @@ function waitForLegalWrapperRender() {
 }
 
 
+function translate() {
+  let LSLang = localStorage.getItem('selected_language')
+  let targetLang = ""
 
+  switch (LSLang) {
+    case 'en-US':
+      targetLang = 'English'
+      break
+    case 'ar-SA':
+      targetLang = 'Arabic'
+      break
+    case 'fr-FR':
+      targetLang = 'French'
+      break
+  }
+
+  let toTranslate = $('.translatable')
+
+  toTranslate.each(function () {
+    $(this).text(getFromDictionary(($(this).text()), targetLang))
+  })
+}
+
+function getFromDictionary(text, toLanguage) {
+  for (var i = 0; i < dictionary.length; i++) {
+
+    var entry = dictionary[i];
+
+    if (entry.English === text) return entry[toLanguage];
+    if (entry.Arabic === text) return entry[toLanguage];
+    if (entry.French === text) return entry[toLanguage];
+
+  }
+
+  return 'Translation not found';
+}
