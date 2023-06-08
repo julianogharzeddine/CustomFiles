@@ -257,12 +257,36 @@ function translate() {
   switch (LSLang) {
     case 'en-US':
       targetLang = 'English'
+      $('[name="Sidebar"]').css('right' , '')
+      $('[name="Sidebar"]').css('left' , '0')
+      $('.runtime-form').css('left' , '')
+      $('.runtime-form').css('left' , '20%')
+      $('.counterCard').css('flex-direction' , 'row-reverse')
+      $('.card-rows').css('flex-direction' , 'row')
+      $('#legalservices-card-wrapper').css('direction' , 'ltr')
+      $('#card-wrapper').css('direction' , 'ltr')
       break
     case 'ar-SA':
       targetLang = 'Arabic'
+      $('[name="Sidebar"]').css('left' , '')
+      $('[name="Sidebar"]').css('right' , '0')
+      $('[name="Sidebar"]').css('left' , '')
+      $('.runtime-form').css('left' , '5%')
+      $('.counterCard').css('flex-direction' , 'row')
+      $('.card-rows').css('flex-direction' , 'row-reverse')
+      $('#legalservices-card-wrapper').css('direction' , 'rtl')
+      $('#card-wrapper').css('direction' , 'rtl')
       break
     case 'fr-FR':
       targetLang = 'French'
+      $('[name="Sidebar"]').css('right' , '')
+      $('[name="Sidebar"]').css('left' , '0')
+      $('.runtime-form').css('left' , '')
+      $('.runtime-form').css('left' , '20%')
+      $('.counterCard').css('flex-direction' , 'row-reverse')
+      $('.card-rows').css('flex-direction' , 'row')
+      $('#legalservices-card-wrapper').css('direction' , 'ltr')
+      $('#card-wrapper').css('direction' , 'ltr')
       break
   }
 
