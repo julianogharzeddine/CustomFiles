@@ -83,18 +83,20 @@ $(document).ready(function () {
       case 'en-US':
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
         $("a.dd-option label.dd-option-text:contains('English')").click();
+        translate()
         break
       case 'ar-SA':
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+        translate()
         break
       case 'fr-FR':
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
         $("a.dd-option label.dd-option-text:contains('Français')").click();
+        translate()
         break
       default:
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+        translate()
         break
     }
   }, 1000)
