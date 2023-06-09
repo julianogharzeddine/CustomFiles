@@ -7,6 +7,31 @@ $(document).ready(function () {
         changeLanguage()
     })
 
+     // Translating the Page On Load
+
+  setTimeout(function () {
+    let LSLang = localStorage.getItem('selected_language')
+
+    switch (LSLang) {
+      case 'en-US':
+        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+        $("a.dd-option label.dd-option-text:contains('English')").click();
+        break
+      case 'ar-SA':
+        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+        break
+      case 'fr-FR':
+        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+        $("a.dd-option label.dd-option-text:contains('Français')").click();
+        break
+      default:
+        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+    
+        break
+    }
+  }, 2000)
+
 })
 
 
@@ -18,6 +43,8 @@ function changeLanguage() {
         if (lang == "en-US") {
             translateToEnglish()
         } else if (lang == 'ar-SA') {
+            translateToArabic()
+        }else{
             translateToArabic()
         }
     }, 500)
@@ -72,7 +99,7 @@ function renderCards() {
         <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/research.png" class='titleImage'>
         <p class="cardTitle" id='Research'>الأبحاث</p>
         <img src='https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/employeeIcon.png' class='employeeIcon'>
-       <div class='empNoWrap'>
+        <div class='empNoWrap'>
         <p class='empCountLabel' class='peopleInDepartment'>فردًا في القسم</p>
         <p class='empCount'>26</p>
         </div>
@@ -114,6 +141,10 @@ function translateToEnglish() {
     $("#Maintenance").text("Maintenance")
     $('#LegalAffairs').text("Legal Affairs")
     $('.cardTitle').css('transform', 'scale(0.8)')
+    $("[name='Sidebar']").css('right' , '')
+    $("[name='Sidebar']").css('left' , '0')
+    $(".form").css('right' , '')
+    $(".form").css('left' , '32%')
 }
 
 function translateToArabic() {
@@ -129,5 +160,9 @@ function translateToArabic() {
     $("#Maintenance").text("الصيانة")
     $('#LegalAffairs').text("الشؤون القانونية")
     $('.cardTitle').css('transform', 'scale(1.05)')
+    $("[name='Sidebar']").css('left' , '')
+    $("[name='Sidebar']").css('right' , '0')
+    $(".form").css('left' , '')
+    $(".form").css('right' , '20%')
 
 }
