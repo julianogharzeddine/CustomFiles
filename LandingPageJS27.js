@@ -38,9 +38,6 @@ $(document).ready(function () {
 
   // Language change listener
 
-  $(document).on('click', ".dd-container a", function () {
-    translate()
-  })
 
   // Showing Investigation Options
 
@@ -85,33 +82,22 @@ $(document).ready(function () {
     switch (LSLang) {
       case 'en-US':
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-
-        setTimeout(function () {
-          translate()
-        }, 1000)
         $("a.dd-option label.dd-option-text:contains('English')").click();
-        translate()
         break
       case 'ar-SA':
         $("a.dd-option label.dd-option-text:contains('English')").click();
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        setTimeout(function () {
-          translate()
-        }, 1000)
+
         break
       case 'fr-FR':
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
         $("a.dd-option label.dd-option-text:contains('Français')").click();
-        setTimeout(function () {
-          translate()
-        }, 1000)
+
         break
       default:
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        setTimeout(function () {
-          translate()
-        }, 1000)
+     
         break
     }
   }, 1000)
