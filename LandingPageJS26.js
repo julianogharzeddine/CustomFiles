@@ -356,9 +356,7 @@ function translate() {
     switch (LSLang) {
       case 'en-US':
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-
         $("a.dd-option label.dd-option-text:contains('English')").click();
-        translate()
         break
       case 'ar-SA':
         $("a.dd-option label.dd-option-text:contains('English')").click();
