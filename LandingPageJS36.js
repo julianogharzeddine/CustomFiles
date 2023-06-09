@@ -15,7 +15,9 @@ $(document).ready(function () {
     localStorage.setItem('selected_language' , 'ar-SA')
   }
 
-  switch (LSLang) {
+  let LSLang1 = localStorage.getItem('selected_language')
+
+  switch (LSLang1) {
     case 'en-US':
 
       $("a.dd-option label.dd-option-text:contains('Arabic')").click();
