@@ -3,10 +3,10 @@ var dictionary;
 $(document).ready(function () {
 
 
-  $(document).click(function(){
+  $(document).click(function () {
     translate()
   })
-  
+
   dictionary = [
     { "English": "Legal Affairs", "Arabic": "الشؤون القانونية", "French": "Aff. Juridiques" },
     { "English": "Proceed Against Institution", "Arabic": "إجراء ضد مؤسسة", "French": "Procéder Contre Inst." },
@@ -61,8 +61,6 @@ $(document).ready(function () {
     $('#card-wrapper').css('visibility', 'visible')
     $('#card-wrapper').css('height', 'fit-content')
 
- 
-
     renderInvestCards()
 
   })
@@ -74,6 +72,28 @@ $(document).ready(function () {
     $('#card-wrapper').css('height', '0')
   })
 
+
+
+  // Translating the Page On Load
+
+  setTimeout(function () {
+    let LSLang = localStorage.getItem('selected_language')
+
+    switch (LSLang) {
+      case 'en-US':
+        $("a.dd-option label.dd-option-text:contains('English')").click();
+        break
+      case 'ar-SA':
+        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+        break
+      case 'fr-FR':
+        $("a.dd-option label.dd-option-text:contains('Français')").click();
+        break
+      default:
+        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+        break
+    }
+  }, 2000)
 })
 
 function renderInvestOptions() {
@@ -264,42 +284,42 @@ function translate() {
   switch (LSLang) {
     case 'en-US':
       targetLang = 'English'
-      $('[name="Sidebar"]').css('right' , '')
-      $('[name="Sidebar"]').css('left' , '0')
-      $('.runtime-form').css('left' , '')
-      $('.runtime-form').css('left' , '20%')
-      $('.counterCard').css('flex-direction' , 'row-reverse')
-      $('.card-rows').css('flex-direction' , 'row-reverse')
-      $('.cardHeader').css('flex-direction' , 'row')
-      $('.dateWrapper').css('flex-direction' , 'row')
-      $('#legalservices-card-wrapper').css('direction' , 'ltr')
-      $('#card-wrapper').css('direction' , 'ltr')
+      $('[name="Sidebar"]').css('right', '')
+      $('[name="Sidebar"]').css('left', '0')
+      $('.runtime-form').css('left', '')
+      $('.runtime-form').css('left', '20%')
+      $('.counterCard').css('flex-direction', 'row-reverse')
+      $('.card-rows').css('flex-direction', 'row-reverse')
+      $('.cardHeader').css('flex-direction', 'row')
+      $('.dateWrapper').css('flex-direction', 'row')
+      $('#legalservices-card-wrapper').css('direction', 'ltr')
+      $('#card-wrapper').css('direction', 'ltr')
       break
     case 'ar-SA':
       targetLang = 'Arabic'
-      $('[name="Sidebar"]').css('left' , '')
-      $('[name="Sidebar"]').css('right' , '0')
-      $('[name="Sidebar"]').css('left' , '')
-      $('.runtime-form').css('left' , '5%')
-      $('.counterCard').css('flex-direction' , 'row')
-      $('.dateWrapper').css('flex-direction' , 'row-reverse')
-      $('.card-rows').css('flex-direction' , 'row-reverse')
-      $('.cardHeader').css('flex-direction' , 'row-reverse')
-      $('#legalservices-card-wrapper').css('direction' , 'rtl')
-      $('#card-wrapper').css('direction' , 'rtl')
+      $('[name="Sidebar"]').css('left', '')
+      $('[name="Sidebar"]').css('right', '0')
+      $('[name="Sidebar"]').css('left', '')
+      $('.runtime-form').css('left', '5%')
+      $('.counterCard').css('flex-direction', 'row')
+      $('.dateWrapper').css('flex-direction', 'row-reverse')
+      $('.card-rows').css('flex-direction', 'row-reverse')
+      $('.cardHeader').css('flex-direction', 'row-reverse')
+      $('#legalservices-card-wrapper').css('direction', 'rtl')
+      $('#card-wrapper').css('direction', 'rtl')
       break
     case 'fr-FR':
       targetLang = 'French'
-      $('[name="Sidebar"]').css('right' , '')
-      $('[name="Sidebar"]').css('left' , '0')
-      $('.runtime-form').css('left' , '')
-      $('.runtime-form').css('left' , '20%')
-      $('.counterCard').css('flex-direction' , 'row-reverse')
-      $('.card-rows').css('flex-direction' , 'row-reverse')
-      $('.cardHeader').css('flex-direction' , 'row')
-      $('.dateWrapper').css('flex-direction' , 'row')
-      $('#legalservices-card-wrapper').css('direction' , 'ltr')
-      $('#card-wrapper').css('direction' , 'ltr')
+      $('[name="Sidebar"]').css('right', '')
+      $('[name="Sidebar"]').css('left', '0')
+      $('.runtime-form').css('left', '')
+      $('.runtime-form').css('left', '20%')
+      $('.counterCard').css('flex-direction', 'row-reverse')
+      $('.card-rows').css('flex-direction', 'row-reverse')
+      $('.cardHeader').css('flex-direction', 'row')
+      $('.dateWrapper').css('flex-direction', 'row')
+      $('#legalservices-card-wrapper').css('direction', 'ltr')
+      $('#card-wrapper').css('direction', 'ltr')
       break
   }
 
