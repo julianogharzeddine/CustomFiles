@@ -460,6 +460,7 @@ div[name*="Worklist Card WT"] span.text-underline {
 .LoadMoreHyperlink {
     background: #06c !important;
     color: white !important;
+    border-radius : 2.5ex !important ;
 
 }
 
