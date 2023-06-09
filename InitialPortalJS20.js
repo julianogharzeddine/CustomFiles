@@ -7,6 +7,27 @@ $(document).ready(function () {
         changeLanguage()
     })
 
+     // Translating the Page On Load
+
+  setTimeout(function () {
+    let LSLang = localStorage.getItem('selected_language')
+
+    switch (LSLang) {
+      case 'en-US':
+        $("a.dd-option label.dd-option-text:contains('English')").click();
+        break
+      case 'ar-SA':
+        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+        break
+      case 'fr-FR':
+        $("a.dd-option label.dd-option-text:contains('Français')").click();
+        break
+      default:
+        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+        break
+    }
+  }, 2000)
+
 })
 
 
