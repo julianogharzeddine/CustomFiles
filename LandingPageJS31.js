@@ -4,11 +4,37 @@ $(document).ready(function () {
 
 
   $(document).click(function () {
-    translate()
+    setTimeout(function () {
+      let LSLang = localStorage.getItem('selected_language')
+  
+      switch (LSLang) {
+        case 'en-US':
+  
+          $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+          $("a.dd-option label.dd-option-text:contains('English')").click();
+          break
+        case 'ar-SA':
+          $("a.dd-option label.dd-option-text:contains('English')").click();
+          $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+          break
+        case 'fr-FR':
+          $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+          $("a.dd-option label.dd-option-text:contains('Français')").click();
+          break
+        default:
+          $("a.dd-option label.dd-option-text:contains('Arabic')").click();
+          break
+      }
+    }, 1000)
   })
   $(document).on('click', ".dd-container a", function () {
     translate()
-})
+  })
+
+  
+  // Translating the Page On Load
+
+ 
 
   dictionary = [
     { "English": "Legal Affairs", "Arabic": "الشؤون القانونية", "French": "Aff. Juridiques" },
@@ -72,34 +98,6 @@ $(document).ready(function () {
     $('#card-wrapper').css('height', '0')
   })
 
-
-
-  // Translating the Page On Load
-
-  setTimeout(function () {
-    let LSLang = localStorage.getItem('selected_language')
-
-    switch (LSLang) {
-      case 'en-US':
-        
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        $("a.dd-option label.dd-option-text:contains('English')").click();
-        break
-      case 'ar-SA':
-        $("a.dd-option label.dd-option-text:contains('English')").click();
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-
-        break
-      case 'fr-FR':
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        $("a.dd-option label.dd-option-text:contains('Français')").click();
-
-        break
-      default:
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        break
-    }
-  }, 1000)
 })
 
 function renderInvestOptions() {
