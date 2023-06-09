@@ -6,10 +6,15 @@ $(document).ready(function () {
     translate()
   })
 
-localStorage.setItem('selected_language' , 'ar-SA')
+
 
   let LSLang = localStorage.getItem('selected_language')
 
+
+  if(LSLang != null && LSLang != 'undefined') {
+    localStorage.setItem('selected_language' , 'ar-SA')
+  }
+  
   switch (LSLang) {
     case 'en-US':
 
