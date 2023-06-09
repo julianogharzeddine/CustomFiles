@@ -86,6 +86,7 @@ $(document).ready(function () {
         translate()
         break
       case 'ar-SA':
+        $("a.dd-option label.dd-option-text:contains('English')").click();
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
         translate()
         break
@@ -95,6 +96,7 @@ $(document).ready(function () {
         translate()
         break
       default:
+        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
         translate()
         break
