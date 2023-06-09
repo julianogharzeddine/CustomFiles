@@ -96,8 +96,6 @@ $(document).ready(function () {
         break
       default:
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-     
         break
     }
   }, 1000)
@@ -336,31 +334,6 @@ function translate() {
     $(this).text(getFromDictionary(($(this).text().trim()), targetLang))
   })
 
-  setTimeout(function () {
-    let LSLang = localStorage.getItem('selected_language')
-
-    switch (LSLang) {
-      case 'en-US':
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        $("a.dd-option label.dd-option-text:contains('English')").click();
-        break
-      case 'ar-SA':
-        $("a.dd-option label.dd-option-text:contains('English')").click();
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-
-        break
-      case 'fr-FR':
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        $("a.dd-option label.dd-option-text:contains('Français')").click();
-
-        break
-      default:
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-
-        break
-    }
-  }, 1000)
 }
 
 function getFromDictionary(text, toLanguage) {
