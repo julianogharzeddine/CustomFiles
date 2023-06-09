@@ -8,7 +8,7 @@ $(document).ready(function () {
   })
   $(document).on('click', ".dd-container a", function () {
     translate()
-  })
+})
 
   dictionary = [
     { "English": "Legal Affairs", "Arabic": "الشؤون القانونية", "French": "Aff. Juridiques" },
@@ -81,32 +81,23 @@ $(document).ready(function () {
 
     switch (LSLang) {
       case 'en-US':
-
-
+        
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
         $("a.dd-option label.dd-option-text:contains('English')").click();
-        translate()
         break
       case 'ar-SA':
-
         $("a.dd-option label.dd-option-text:contains('English')").click();
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        translate()
 
         break
       case 'fr-FR':
-
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
         $("a.dd-option label.dd-option-text:contains('Français')").click();
-        translate()
 
         break
       default:
-
         $("a.dd-option label.dd-option-text:contains('Arabic')").click();
-        translate()
         break
-        translate()
     }
   }, 1000)
 })
