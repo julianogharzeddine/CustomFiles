@@ -20,6 +20,12 @@ $(document).ready(function () {
         $('#modal').css('display', 'none')
     })
 
+    
+    $(document).on("click", "#addService", function () {
+        $('.runtime-content').css('opacity', '1')
+        $('#modal').css('display', 'none')
+    })
+
 
     $(document).on("click", "#addService", function () {
 
