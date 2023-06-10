@@ -328,7 +328,7 @@ div[name="InvestigationButtonsView"] {
 }
 
 .cardItem .titleImage {
-    width: 80% !important;
+    width: 75% !important;
     height: 145px !important;
     border-radius: 25px !important;
     max-width: 350px !important;
