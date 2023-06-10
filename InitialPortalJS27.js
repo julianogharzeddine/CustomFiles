@@ -30,9 +30,13 @@ $(document).ready(function () {
     $(document).on("click", "#addService", function () {
 
         let serviceName = $("#serviceName").val()
-        let serviceLink = $("#serviceName").val()
+        let serviceLink = $("#serviceLink").val()
 
-        renderNewService(serviceName , serviceLink)
+      
+        renderNewService(serviceName , serviceLink) 
+
+        $("#serviceName").val("")
+        $("#serviceLink").val("")
     })
 
 })
