@@ -3,11 +3,49 @@ $(document).ready(function () {
     // Wait for the card-wrapper div to render successfully
     waitForWrapperRender();
 
+
+    createModal()
+
     $(document).on('click', ".dd-container a", function () {
         changeLanguage()
     })
 
+    $(document).on("click", "[name*='AddService']", function () {
+        $('.runtime-content').css('opacity', '0.6')
+        $('#modal').css('display', 'block')
+    })
+
+    $(document).on("click", "#closeModal", function () {
+        $('.runtime-content').css('opacity', '1')
+        $('#modal').css('display', 'none')
+    })
+
+
+    $(document).on("click", "#addService", function () {
+
+        let serviceName = $("#serviceName").val()
+        let serviceLink = $("#serviceName").val()
+
+        renderNewService(serviceName , serviceLink)
+    })
+
 })
+
+function renderNewService(serviceName, serviceLink) {
+    $('#card-wrapper').append(`
+    <div class="cardItem">
+        <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/4463470.jpg" class='titleImage'>
+        <p class="cardTitle">${serviceName}</p>
+        <img src='https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/employeeIconBlue.jpg' class='employeeIcon'>
+        <div class='empNoWrap'>
+        <p class='empCountLabel' class='peopleInDepartment'>فردًا في القسم</p>
+        <p class='empCount'>20</p>
+        </div>
+        <a class='goToCategoryButton browseDepartmentDetails' href="${serviceLink}" > تعرّف على القسم</a>
+    </div>
+    `)
+
+}
 
 
 function changeLanguage() {
@@ -114,6 +152,10 @@ function translateToEnglish() {
     $("#Maintenance").text("Maintenance")
     $('#LegalAffairs').text("Legal Affairs")
     $('.cardTitle').css('transform', 'scale(0.8)')
+    $("[name='Sidebar']").css('right' , '')
+    $("[name='Sidebar']").css('left' , '0')
+    $(".form").css('right' , '')
+    $(".form").css('left' , '32%')
 }
 
 function translateToArabic() {
@@ -129,5 +171,31 @@ function translateToArabic() {
     $("#Maintenance").text("الصيانة")
     $('#LegalAffairs').text("الشؤون القانونية")
     $('.cardTitle').css('transform', 'scale(1.05)')
-
+    $("[name='Sidebar']").css('left' , '')
+    $("[name='Sidebar']").css('right' , '0')
+    $(".form").css('left' , '')
+    $(".form").css('right' , '20%')
 }
+
+
+function createModal() {
+    $('body').append(`
+<div id="modal">
+<div id="modalHeader">
+    <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/lettre-x.png" id="closeModal">
+</div>
+<div id="modalBody">
+    <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/newServiceIllustration.png"
+        id="modalIllustration">
+    <div id="controlsDiv">
+        <p class="modalLabel translatable">إسم الخدمة</p>
+        <input type="text" class='input' id="serviceName" />
+        <div class="modalLabel translatable">رابط الخدمة</div>
+        <input type="text" class='input' id="serviceLink" />
+        <div id="addService" class="translatable">إضافة</div>
+    </div>
+</div>
+</div>
+`)
+}
+
