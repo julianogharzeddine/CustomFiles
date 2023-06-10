@@ -325,13 +325,14 @@ div[name="Sidebar"] div {
             place-content: center;
             align-items: center;
             height: 40px;
-            width: 130px;
+            width: 150px;
             border-radius: 2.5ex;
             border: none;
             background-color: #0066cc;
             color: #fff;
             cursor: pointer;
             align-self: center;
+            font-size : 18px ;
             margin-top: 10px;
             transition: filter 0.2s ease;
         }
