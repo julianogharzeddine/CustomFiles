@@ -563,11 +563,11 @@ a[name*="NoBorder"] {
     direction: rtl;
 }
 
-.notification.rtl .dropdown-content {
+.dropdown-content {
     right: initial;
 }
 
-.notification.rtl .dropdown-content .date-icon {
+.dropdown-content .date-icon {
     margin-left: 15px;
 }
 
@@ -639,8 +639,4 @@ a[name*="NoBorder"] {
 
 .dropdown-content a:hover {
     background-color: #f1f1f1
-}
-
-.show {
-    display: block;
 }
