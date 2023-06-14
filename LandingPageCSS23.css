@@ -639,3 +639,12 @@ a[name*="NoBorder"] {
   line-height: 20px;
 }
 
+.cardItem {
+    cursor: pointer;
+    transition : all 0.2s ease !important ;
+}
+
+.cardItem:hover {
+    transform: scale(1.03);
+}
+
