@@ -110,7 +110,7 @@ $(document).ready(function () {
     })
 
     $(document).on('click', '#bellicon', function () {
-       $('#dropdownContent').toggle()
+        $('#dropdownContent').toggle()
     });
 
 })
@@ -300,26 +300,26 @@ function createReqCounters() {
 function renderLegalServicesCards() {
     $('#legalservices-card-wrapper').html("")
     $('#legalservices-card-wrapper').append(`
-  <div class="cardItem">
-      <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/4463470.jpg" class='titleImage'>
-      <p class="cardTitle translatable">إجراء ضد مؤسسة</p>
-  </div>
-  <div class="cardItem">
-      <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/InformationTech.jpg" class='titleImage'>
-      <p class="cardTitle translatable">إجراء مع المؤسسة</p>
-  </div>
-  <div class="cardItem" id='createInvestigationButton'>
-      <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/ArchitectureIllustration.jpg" class='titleImage'>
-      <p class="cardTitle translatable">إجراء تحقيق</p>
-  </div>
-  <div class="cardItem">
-      <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/process_optimization_4.jpg" class='titleImage'>
-      <p class="cardTitle translatable">إجراء تضارب المصالح</p>
-  </div>
-  <div class="cardItem">
-      <img src="https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/researchIllustration.png" class='titleImage'>
-      <p class="cardTitle translatable">إجراءات دراسة العقود</p>
-  </div>
+    <div class="cardItem">
+    <img src="https://cdn.jsdelivr.net/gh/nourkhansa20/CustomFiles@main/379143894_750x422.jpg" class='titleImage'>
+    <p class="cardTitle translatable">إجراء ضد مؤسسة</p>
+</div>
+<div class="cardItem">
+    <img src="https://cdn.jsdelivr.net/gh/nourkhansa20/CustomFiles@main/court-inquest-adobestock_184306582.jpg" class='titleImage'>
+    <p class="cardTitle translatable">إجراء مع المؤسسة</p>
+</div>
+<div class="cardItem" id='createInvestigationButton'>
+    <img src="https://cdn.jsdelivr.net/gh/nourkhansa20/CustomFiles@main/0-6.jpg" class='titleImage'>
+    <p class="cardTitle translatable">إجراء تحقيق</p>
+</div>
+<div class="cardItem">
+    <img src="https://cdn.jsdelivr.net/gh/nourkhansa20/CustomFiles@main/conflict-of-interest-25e7ab7068414ab080d7563821681049.jpg" class='titleImage'>
+    <p class="cardTitle translatable">إجراء تضارب المصالح</p>
+</div>
+<div class="cardItem">
+    <img src="https://cdn.jsdelivr.net/gh/nourkhansa20/CustomFiles@main/pexels-photo.jpg" class='titleImage'>
+    <p class="cardTitle translatable">إجراءات دراسة العقود</p>
+  </div>
   `)
 }
 
