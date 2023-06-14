@@ -75,7 +75,7 @@ $(document).ready(function () {
         { "English": "Created By", "Arabic": "انشا من قبل", "French": "Créé Par" },
         { "English": "Investigation Status", "Arabic": "حالة التحقيق", "French": "Statut Enquête" },
         { "English": "Subject", "Arabic": "الموضوع", "French": "Sujet" },
-        { "English": " of ", "Arabic": " من ", "French": "Sujet" }
+        { "English": "out of", "Arabic": "من", "French": "de" }
     ];
 
 
@@ -83,8 +83,7 @@ $(document).ready(function () {
 
     setTimeout(function () {
         renderLegalServicesCards()
-        var bellicon = $('[name="bellicon"]')
-        $('#taskDD').append(bellicon)
+     
         $('#taskDD').append(`<div id='myDropdown'></div>`)
         renderTasks()
 
@@ -122,6 +121,14 @@ $(document).ready(function () {
     $('[name="MyTasks ButtonNoBorder"]').click(function () {
         $('#card-wrapper').css('visibility', 'hidden')
         $('#card-wrapper').css('height', '0')
+    })
+
+    $('[name="Text Box"]').on("input" , function(){
+
+        setTimeout(function(){
+              renderInvestCards()
+        } , 1000)
+      
     })
 
 })
@@ -253,17 +260,17 @@ function createReqCounters() {
   <div class="Complete counterCard">
       <p id="completeCounter" class="counterCircle">${completedNo}</p>
       <p class="counterLabel translatable">المكتملة</p>
-      <p class="totalcounter">${completedNo} <span class='translatable'>من </span> ${totalcounter}</p>
+      <p class="totalcounter"><span class='translatable'>من </span> ${totalcounter}</p>
   </div>
   <div class="Active counterCard">
       <p id="activeCounter" class="counterCircle">${activeNo}</p>
       <p class="counterLabel translatable">النشطة</p>
-      <p class="totalcounter">${activeNo} <span class='translatable'>من </span> ${totalcounter}</p>
+      <p class="totalcounter"><span class='translatable'>من </span> ${totalcounter}</p>
   </div>
   <div class="New counterCard">
       <p id="newCounter" class="counterCircle">${newNo}</p>
       <p class="counterLabel translatable">الجديدة</p>
-      <p class="totalcounter">${newNo} <span class='translatable'>من </span> ${totalcounter}</p>
+      <p class="totalcounter"><span class='translatable'>من </span> ${totalcounter}</p>
   </div>
   `
     $("#reqCounter").html("")
@@ -390,5 +397,4 @@ function renderTasks() {
 
     $('#myDropdown').append(htmlSnippet)
 }
-
 
