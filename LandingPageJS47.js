@@ -138,38 +138,38 @@ function renderInvestOptions() {
 
 function createNotificationIcon() {
 
-    $('body').append(`<div class="taskDD">
-    <div>
-      <div id="notificationCounter">
-        <p id="redCircle">3</p>
-      </div>
-      <img id="bellicon" src="https://srv-k2five/Runtime/Image.ashx?ImID=150274">
+$('body').append(`<div class="taskDD">
+<div>
+  <div id="notificationCounter">
+    <p id="redCircle">3</p>
+  </div>
+  <img id="bellicon" src="https://srv-k2five/Runtime/Image.ashx?ImID=150274">
+</div>
+
+<div id="dropdownContent" style="/* margin-top: 3px; */">
+  <a href="https://srv-k2five/Runtime/Runtime/Form/Review.Form/?SerialNo=39357_29&ServiceID=cc50a549-e868-4a9b-b3ff-f8901c8ec091&Task=%D9%88%D9%83%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%81%D8%B8%20%D9%84%D9%84%D8%B4%D8%A4%D9%88%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%AD%D9%88%D9%83%D9%85%D8%A9" target="_blank">
+    <div class="date-icon" style="background-color: #0066cc;">اليوم</div>
+    <div class="task-details">
+      <h4>وكيل المحافظ للشؤون القانونية والحوكمة</h4>
+      <p>IAD - 001071 : رقم الطلب </p>
     </div>
-  
-    <div id="dropdownContent" style="/* margin-top: 3px; */">
-      <a href="task1.html" target="_blank">
-        <div class="date-icon" style="background-color: #0066cc;">اليوم</div>
-        <div class="task-details">
-          <h4>المهمة 1</h4>
-          <p>ID: 1</p>
-        </div>
-      </a>
-      <a href="task2.html" target="_blank">
-        <div class="date-icon" style="background-color: #0066cc;">الأربعاء</div>
-        <div class="task-details">
-          <h4>المهمة 2</h4>
-          <p>ID: 2</p>
-        </div>
-      </a>
-      <a href="task3.html" target="_blank">
-        <div class="date-icon" style="background-color: #0066cc;">الخميس</div>
-        <div class="task-details">
-          <h4>المهمة 3</h4>
-          <p>ID: 3</p>
-        </div>
-      </a>
+  </a>
+  <a href="task2.html" target="_blank">
+    <div class="date-icon" style="background-color: #0066cc;">الأربعاء</div>
+    <div class="task-details">
+      <h4>تشكيل اللجنة</h4>
+      <p>IAD - 001073 : رقم الطلب </p>
     </div>
-  </div>`)
+  </a>
+  <a href="task3.html" target="_blank">
+    <div class="date-icon" style="background-color: #0066cc;">الخميس</div>
+    <div class="task-details">
+      <h4>وكيل المحافظ للشؤون القانونية والحوكمة</h4>
+      <p>IAD - 001074 : رقم الطلب </p>
+    </div>
+  </a>
+</div>
+</div>`)
 
 }
 
@@ -310,16 +310,13 @@ function renderLegalServicesCards() {
 </div>
 <div class="cardItem" id='createInvestigationButton'>
     <img src="https://cdn.jsdelivr.net/gh/nourkhansa20/CustomFiles@main/0-6.jpg" class='titleImage'>
-    <p class="cardTitle translatable">إجراء تحقيق</p>
-</div>
+    <p class="cardTitle translatable">إجراء تحقيق</p></div>
 <div class="cardItem">
     <img src="https://cdn.jsdelivr.net/gh/nourkhansa20/CustomFiles@main/conflict-of-interest-25e7ab7068414ab080d7563821681049.jpg" class='titleImage'>
-    <p class="cardTitle translatable">إجراء تضارب المصالح</p>
-</div>
+    <p class="cardTitle translatable">إجراء تضارب المصالح</p></div>
 <div class="cardItem">
     <img src="https://cdn.jsdelivr.net/gh/nourkhansa20/CustomFiles@main/pexels-photo.jpg" class='titleImage'>
-    <p class="cardTitle translatable">إجراءات دراسة العقود</p>
-  </div>
+    <p class="cardTitle translatable">إجراءات دراسة العقود</p></div>
   `)
 }
 
