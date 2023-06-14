@@ -340,3 +340,17 @@ div[name="Sidebar"] div {
         #addService:hover {
             filter: opacity(0.9);
         }
+
+.infoIconContainer {
+    display: flex;
+    height: 3ex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+
+.infoIcon {
+    width: 3ex;
+    height: 3ex;
+}
