@@ -562,7 +562,7 @@ a[name*="NoBorder"] {
 
 .taskDD {
     position: absolute !important;
-    width: 300px;
+    width: 420px;
     top: 90px;
     left: 25%;
     z-index: 100 !important;
@@ -595,13 +595,14 @@ a[name*="NoBorder"] {
 .task-details h4 {
     margin: 0;
     margin-bottom: 5px;
+       text-align: right !important;
 }
 
 .task-details p {
     margin: 0;
     color: #888;
     font-size: 14px;
-    text-align: right;
+    text-align: right !important;
 }
 
 .taskDD a:hover {
