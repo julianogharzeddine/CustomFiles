@@ -354,3 +354,7 @@ div[name="Sidebar"] div {
     width: 3ex;
     height: 3ex;
 }
+
+.cardItem {
+    cursor: pointer;
+}
