@@ -1,0 +1,19 @@
+
+input[name="Text Box"] {
+    /*     max-width: 13ex !important; */
+    width: 13ex !important;
+
+}
+
+span:has(input[name="Text Box"]) {
+    /*     max-width: 71ex; */
+    width: 80ex;
+}
+
+input[name="Text Box"] {
+    width: 55ex !important;
+    margin: 0ex 1ex !important;
+    font-size: 12pt !important;
+    padding: 5px !important;
+    border-color: #c2c2c2 !important;
+}
