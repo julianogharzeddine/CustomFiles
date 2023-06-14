@@ -83,9 +83,12 @@ $(document).ready(function () {
 
     setTimeout(function () {
         renderLegalServicesCards()
-     
+
         $('#taskDD').append(`<div id='myDropdown'></div>`)
-        renderTasks()
+        setTimeout(function () {
+            renderTasks()
+        }, 500)
+
 
     }, 2000)
 
@@ -123,12 +126,12 @@ $(document).ready(function () {
         $('#card-wrapper').css('height', '0')
     })
 
-    $('[name="Text Box"]').on("input" , function(){
+    $('[name="Text Box"]').on("input", function () {
 
-        setTimeout(function(){
-              renderInvestCards()
-        } , 1000)
-      
+        setTimeout(function () {
+            renderInvestCards()
+        }, 1000)
+
     })
 
 })
@@ -384,7 +387,7 @@ function getFromDictionary(text, toLanguage) {
 
 function renderTasks() {
 
-    var htmlSnippet =""
+    var htmlSnippet = ""
 
     tasks.forEach(function (task) {
         var taskHtml = '<a href="task' + task.id + '.html" target="_blank">' +
