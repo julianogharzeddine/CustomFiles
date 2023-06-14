@@ -86,7 +86,7 @@ body {
 #card-wrapper {
     width: 100% !important;
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     place-items: center !important;
     grid-row-gap: 30px !important;
     overflow-y: auto !important;
@@ -106,9 +106,9 @@ body {
 
 .cardItem {
     padding: 15px !important;
-    width: 65% !important;
-    min-width : 350px !important ;
-    height: 380px !important;
+    width: 60% !important;
+    min-width: 248px !important;
+    height: 243px !important;
     border-radius: 2.5ex !important;
     box-shadow: 0px 13px 25px #0000002B !important;
     background: #ffffff !important;
@@ -131,7 +131,7 @@ body {
     text-align: center !important;
     letter-spacing: 0px !important;
     color: #2E2E2E !important;
-    font-size: 25px !important;
+    font-size: 21px !important;
     font-weight: bold !important;
 }
 
