@@ -85,6 +85,7 @@ $(document).ready(function () {
         renderLegalServicesCards()
 
         $('#taskDD').append(`<div id='myDropdown'></div>`)
+        $('#myDropdown').append(`<img src='bellicon' src='https://srv-k2five/Runtime/Image.ashx?ImID=150274'/>`)
         setTimeout(function () {
             renderTasks()
         }, 500)
