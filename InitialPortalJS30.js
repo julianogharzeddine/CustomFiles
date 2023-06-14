@@ -150,8 +150,7 @@ function renderCards() {
         class='infoIcon'>
     </div>
         <img src="https://cdn.jsdelivr.net/gh/nourkhansa20/CustomFiles@main/maintenance.jpg" class='titleImage'>
-        <p class="cardTitle" id='Maintenance'>الصيانة</p>
-    </div>
+        <p class="cardTitle" id='Maintenance'>الصيانة</p></div>
     `)
 }
 
