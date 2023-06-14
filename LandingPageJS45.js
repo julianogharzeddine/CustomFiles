@@ -1,26 +1,4 @@
 var dictionary;
-var tasks = [
-    {
-        id: 1,
-        title: { en: "Task 1", ar: "المهمة 1" },
-        date: { en: "Yesterday", ar: "أمس" },
-        color: "#ff000085",
-    },
-    {
-        id: 2,
-        title: { en: "Task 2", ar: "المهمة 2" },
-        date: { en: "W", ar: "الأربعاء" },
-        color: "#00ff006b",
-    },
-    {
-        id: 3,
-        title: { en: "Task 3", ar: "المهمة 3" },
-        date: { en: "Thursday", ar: "الخميس" },
-        color: "#0000ff7a",
-    },
-];
-
-var language = 'en'
 
 $(document).ready(function () {
 
@@ -83,16 +61,12 @@ $(document).ready(function () {
 
     setTimeout(function () {
         renderLegalServicesCards()
-
-        $('#taskDD').append(`<div id='myDropdown'></div>`)
-        $('#myDropdown').append(`<img src='bellicon' src='https://srv-k2five/Runtime/Image.ashx?ImID=150274'/>`)
-        setTimeout(function () {
-            renderTasks()
-        }, 500)
-
-
     }, 2000)
 
+
+    // Creating Notification Icon
+
+    createNotificationIcon()
 
     // Showing Investigation Options
 
@@ -135,6 +109,10 @@ $(document).ready(function () {
 
     })
 
+    $(document).on('click', '#bellicon', function () {
+       $('#dropdownContent').toggle()
+    });
+
 })
 
 function renderInvestOptions() {
@@ -155,6 +133,44 @@ function renderInvestOptions() {
   </div>
   
   `)
+}
+
+
+function createNotificationIcon() {
+
+    $('body').append(`<div class="taskDD">
+    <div>
+      <div id="notificationCounter">
+        <p id="redCircle">3</p>
+      </div>
+      <img id="bellicon" src="https://srv-k2five/Runtime/Image.ashx?ImID=150274">
+    </div>
+  
+    <div id="dropdownContent" style="/* margin-top: 3px; */">
+      <a href="task1.html" target="_blank">
+        <div class="date-icon" style="background-color: #0066cc;">اليوم</div>
+        <div class="task-details">
+          <h4>المهمة 1</h4>
+          <p>ID: 1</p>
+        </div>
+      </a>
+      <a href="task2.html" target="_blank">
+        <div class="date-icon" style="background-color: #0066cc;">الأربعاء</div>
+        <div class="task-details">
+          <h4>المهمة 2</h4>
+          <p>ID: 2</p>
+        </div>
+      </a>
+      <a href="task3.html" target="_blank">
+        <div class="date-icon" style="background-color: #0066cc;">الخميس</div>
+        <div class="task-details">
+          <h4>المهمة 3</h4>
+          <p>ID: 3</p>
+        </div>
+      </a>
+    </div>
+  </div>`)
+
 }
 
 function goTo(href) {
