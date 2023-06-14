@@ -216,7 +216,7 @@ div[name="Sidebar"] {
     position: fixed !important;
     right: 0 ;
     width: 330px !important;
-    top: 160px !important;
+    top: 190px !important;
     z-index: 1 !important;
    /* border-top-left-radius: 20px !important; */
     box-shadow: 0px 0px 30px #0066CC80 !important;
