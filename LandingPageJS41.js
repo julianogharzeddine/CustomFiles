@@ -1,40 +1,26 @@
 var dictionary;
 var tasks = [
     {
-      id: 1,
-      title: { en: "Task 1", ar: "المهمة 1" },
-      date: { en: "Yesterday", ar: "أمس" },
-      color: "#ff000085",
+        id: 1,
+        title: { en: "Task 1", ar: "المهمة 1" },
+        date: { en: "Yesterday", ar: "أمس" },
+        color: "#ff000085",
     },
     {
-      id: 2,
-      title: { en: "Task 2", ar: "المهمة 2" },
-      date: { en: "W", ar: "الأربعاء" },
-      color: "#00ff006b",
+        id: 2,
+        title: { en: "Task 2", ar: "المهمة 2" },
+        date: { en: "W", ar: "الأربعاء" },
+        color: "#00ff006b",
     },
     {
-      id: 3,
-      title: { en: "Task 3", ar: "المهمة 3" },
-      date: { en: "Thursday", ar: "الخميس" },
-      color: "#0000ff7a",
+        id: 3,
+        title: { en: "Task 3", ar: "المهمة 3" },
+        date: { en: "Thursday", ar: "الخميس" },
+        color: "#0000ff7a",
     },
-  ];
+];
 
-
-  var language = "en";
-
-  window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn")) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      for (var i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains("show")) {
-          openDropdown.classList.remove("show");
-        }
-      }
-    }
-  };
-
+var language = 'en'
 
 $(document).ready(function () {
 
@@ -97,10 +83,12 @@ $(document).ready(function () {
 
     setTimeout(function () {
         renderLegalServicesCards()
-        renderTasks();
-    }, 2000)
+        var bellicon = $('[name="bellicon"]')
+        $('#taskDD').append(bellicon)
+        $('#taskDD').append(`<div id='myDropdown'></div>`)
+        renderTasks()
 
-    // Language change listener
+    }, 2000)
 
 
     // Showing Investigation Options
@@ -260,7 +248,7 @@ function fetchReqStatuses() {
 function createReqCounters() {
 
     let [activeNo, newNo, completedNo] = fetchReqStatuses()
-    let totalcounter=$("[name='Count Data Label']").text();
+    let totalcounter = $("[name='Count Data Label']").text();
     let content = `
   <div class="Complete counterCard">
       <p id="completeCounter" class="counterCircle">${completedNo}</p>
@@ -387,65 +375,20 @@ function getFromDictionary(text, toLanguage) {
     return 'Translation not found';
 }
 
-
-
 function renderTasks() {
-    // Get the dropdown container
-    var dropdown = document.getElementById("myDropdown");
-  
-    // Clear the current tasks
-    dropdown.innerHTML = "";
-  
-    // Create new task elements for each task
+
+    var htmlSnippet =""
+
     tasks.forEach(function (task) {
-      var a = document.createElement("a");
-      a.href = "task" + task.id + ".html";
-      a.target = "_blank";
-  
-      var dateIcon = document.createElement("div");
-      dateIcon.className = "date-icon";
-      dateIcon.textContent = task.date[language];
-      dateIcon.style.backgroundColor = task.color;
-  
-      var taskDetails = document.createElement("div");
-      taskDetails.className = "task-details";
-  
-      var h4 = document.createElement("h4");
-      h4.textContent = task.title[language];
-  
-      var p = document.createElement("p");
-      p.textContent = "ID: " + task.id;
-  
-      taskDetails.appendChild(h4);
-      taskDetails.appendChild(p);
-  
-      a.appendChild(dateIcon);
-      a.appendChild(taskDetails);
-  
-      dropdown.appendChild(a);
+        var taskHtml = '<a href="task' + task.id + '.html" target="_blank">' +
+            '<div class="date-icon" style="background-color: ' + task.color + ';">' +
+            task.date.ar + '</div>' +
+            '<div class="task-details"><h4>' + task.title.ar + '</h4><p>ID: ' +
+            task.id + '</p></div></a>';
+        htmlSnippet += taskHtml;
     });
-  }
 
-  function toggleDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+    $('#myDropdown').append(htmlSnippet)
+}
 
-  
-function changeLanguage() {
-    language = language === "en" ? "ar" : "en";
-    // Get the language button
-    var languageButton = document.getElementById("language-button");
-  
-    // Update the button text based on the current language
-    languageButton.innerText = language === "en" ? "AR" : "EN";
-  
-    renderTasks();
-  
-    const notification = document.querySelector(".notification");
-  
-    if (notification.classList.contains("rtl")) {
-      notification.classList.remove("rtl");
-    } else {
-      notification.classList.add("rtl");
-    }
-  }
+
