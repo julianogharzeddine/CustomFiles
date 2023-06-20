@@ -206,6 +206,7 @@ div[name*="Card"] .grid-toolbars {
     width : 100% !important ;
 }
 
-[name*="Submit Button"]{
+[name*="Submit Button"] , [name*="Reject Button"]{
     border-radius : 2.5ex !important ;
+    margin : 10px
 }
