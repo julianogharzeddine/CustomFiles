@@ -1,0 +1,766 @@
+:root {
+    --text_field_radius: 1.4ex;
+    --text_field_border_color: #c1c1c1;
+    --text_field_font_size: 11pt
+}
+
+input[name="User Name Text Box"] {
+    font-weight: lighter!important
+}
+
+div[name*=Card] .grid-header-text span {
+    padding: 0 .3ex 0 1.3ex!important
+}
+
+.custBody {
+    width: 100%;
+    display: flex!important;
+    justify-content: center
+}
+
+div[name="Session Link"] .panel-body {
+    background: #ebf3fd!important
+}
+
+div[name="Session Link"] a {
+    text-decoration: none;
+    background-color: #06c!important;
+    color: #fff!important;
+    padding: 1ex 4ex;
+    border-radius: 2ex
+}
+
+div[name*=Card] .styling-font {
+    font-weight: lighter!important
+}
+
+span[name*=FTitle] {
+    font-size: 3.4ex!important;
+    padding-bottom: .7ex;
+    color: #0261ac!important
+}
+
+span[name*=lbl] {
+    color: #505050!important
+}
+
+@font-face {
+    font-family: swcc-medium;
+    src: url(https://cdn.jsdelivr.net/gh/julianogharzeddine/CustomFiles@main/SWCC-3-Medium.otf) format('opentype')
+}
+
+.toolbar-button:focus {
+    border: none!important
+}
+
+.popup .lookup-box {
+    width: 92%!important
+}
+
+.popup .picker-search {
+    border-left: 1px solid lightgrey!important
+}
+
+.popup .input-control-watermark {
+    border-right: 1px solid lightgrey!important
+}
+
+* {
+    font-family: swcc-medium!important
+}
+
+div[name="Requester Info Card"] {
+    height: 53.3ex!important
+}
+
+div[name*=Card] {
+    font-family: swcc-medium!important
+}
+
+div[name*=Card] .grid-content-cell span {
+    font-family: swcc-medium!important
+}
+
+.row:has(div[name*=Card]) {
+    padding: 0 3ex!important;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    flex-direction: row;
+}
+
+div[name="Questioning List Card WT"] {
+    color: #505050!important
+}
+
+div[name*=Card] .SourceCode-Forms-Controls-Web-DataLabel {
+    color: #004687!important;
+    font-weight: lighter;
+    direction: ltr;
+    font-family: swcc-medium!important
+}
+
+.row {
+    background-color: #ebf3fd!important
+}
+
+div[name*=Card] .SourceCode-Forms-Controls-Web-TextBox.watermark,div[name*=Card] .input-control-m-c,div[name*=Card] .SourceCode-Forms-Controls-Web-TextBox {
+    border: 1px solid #d1d7dd!important;
+    border-radius: 4px!important
+}
+
+div[name*=Card] .panel-header-c,div[name*=Card] .grid-header-wrapper {
+    padding-right: 2.2ex
+}
+
+div[name*=Card] .panel-header,div[name*=Card] .grid-header {
+    background-color: #fff!important;
+    padding: 1ex;
+    border-radius: 2ex 2ex 0px 0px !important;
+}
+
+div[name="New Committee Card WT"] .picker {
+    right: -2.6ex
+}
+
+div[name*=Card] .styling-right,div[name*=Card] .styling-left {
+    border: 1px solid var(--text_field_border_color)!important
+}
+
+div[name*=Card] .input-control-watermark {
+    height: 100%!important;
+    min-height: 3ex!important;
+    font-size: 2.1ex;
+    font-weight: lighter
+}
+
+div[name*=Card] .input-control-wrapper .editable-area {
+    height: 22px!important
+}
+
+div[name*=Card] .styling-inner-wrapper .input-control-m-c {
+    border: none!important;
+    display: flex;
+    align-items: center
+}
+
+div[name*=Card] .toolbar-wrapper .button-text {
+    font-size: 15.2px
+}
+
+div[name*=Card] .toolbar-wrapper {
+    border: none!important
+}
+
+div[name*=Card] .input-control {
+    text-align: start!important
+}
+
+div[name*=DDH] .select-box,div[name*="Sessions Card"] .select-box {
+    margin-bottom: 1.4ex
+}
+
+div[name*=Card] .SourceCode-Forms-Controls-Web-Label {
+    font-weight: 700;
+    font-family: swcc-medium!important
+}
+
+div[name*=Card] span[name*=lbwb] {
+    border-radius: .4ex;
+    padding: 0 0 10.1px 6px
+}
+
+div[name="Complaint User Card"] .styling-outer-wrapper {
+    position: relative;
+    top: 0
+}
+
+div[name*=Card] .file-wrapper {
+    border: 1px dashed #d1d7dd!important
+}
+
+div[name*=Card] .grid-column-headers {
+    background-color: #fff!important
+}
+
+div[name*=Card] .grid-column-header-table td {
+    border: #f0f8ff
+}
+
+div[name*=Card] .grid-body-content-wrapper {
+    border-radius: 0 0 2.5ex 2.5ex!important
+}
+
+div[name="Submit.Form Area Item8"] .grid-column-headers {
+    border: 1px solid #d5d6d4!important
+}
+
+div[name="Card 7"] .select-box {
+    margin-bottom: 2ex
+}
+
+div[name="Inquiry Details Card DDH"] .select-box {
+    margin-bottom: 2ex
+}
+
+.dwnIcon {
+    margin-left: .4
+}
+
+.custLink {
+    text-decoration: none!important;
+    padding-bottom: 1ex!important;
+    color: #48b2d2!important;
+    font-size: 1.7ex!important;
+    border: 1px solid #4bd5ff;
+    border-radius: 1.1ex;
+    margin: .5ex 0;
+    display: flex!important;
+    align-items: center;
+    justify-content: space-around;
+    width: 15ex
+}
+
+div[name="Attach Card"] .grid-content-cell {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center
+}
+
+a[name="Button Submit"] {
+    border-radius: 3.1ex!important;
+    font-weight: 700;
+    width: 19ex!important;
+    height: 5ex!important;
+    font-size: 16px
+}
+
+div[name*=Card] .panel-body .panel-body-m .panel-body-m-c .panel-body-wrapper .SourceCode-Forms-Controls-Web-Table {
+    border-radius: 0 0 1.5ex 2.5ex!important
+}
+
+div[name*=Card] .panel-header,div[name*=Card] .grid-header {
+    font-size: 1.9ex!important;
+    padding-bottom: 4.6ex;
+    padding-top: 4.2ex;
+    color: #040b10!important
+}
+
+div[name*=Card] .panel-header-wrapper,div[name*=Card] .grid-header-wrapper,div[name*=Card] .panel-header div,div[name*=Card] .grid-header-wrapper div {
+    direction: rtl;
+    background-color: #fff!important;
+    font-family: swcc-medium!important
+}
+
+div[name*=Card] .grid-column-header-cell-content div {
+    text-align: center;
+    font-weight: 700!important;
+    color: #000!important;
+    font-size: 14px;
+    width: 100%!important
+}
+
+div[name*=Card] {
+    height: fit-content!important
+}
+
+div[name*=Card] .editor-cell.lastcellinrow {
+    padding-right: 0!important
+}
+
+div[name*=Card] .panel-header-wrapper .panel-header-text,div[name*=Card] .grid-header-wrapper .grid-header-text {
+    font-weight: 700;
+    color: #06c!important;
+    font-family: swcc-medium!important;
+    font-size: 3ex!important;
+    height: 100%!important
+}
+
+div[name*=Card] .panel-header-wrapper .panel-header-text span,div[name*=Card] .grid-header-wrapper .grid-header-text span {
+    font-weight: 700;
+    color: #0261ac!important;
+    font-family: swcc-medium!important;
+    font-size: 1.5ex!important;
+    height: 100%!important
+}
+
+div[name*="Optional Attachmts Card"] .grid-toolbars {
+}
+
+div[name*=Card] {
+    box-shadow: none!important;
+    background: #ebf3fd!important;
+    border-radius: 2.5ex!important
+}
+
+div[name*=Card] .panel-body {
+}
+
+div[name*=Card] .grid-body {
+    border-radius: 0!important
+}
+
+.theme-entry .form:first-child {
+    background: #ebf3fd
+}
+
+div[name*=Card] .picture-control-inline {
+    margin-right: 1ex;
+    margin-top: .3ex;
+    width: 2.7ex!important
+}
+
+div[name="Attach Card"] .grid-toolbars {
+    display: none!important
+}
+
+div[name*=Card] .panel-body {
+    padding: 0 4ex!important;
+    background: #fff!important;
+    padding-bottom: 2.2ex!important;
+    padding-top: 2.5ex!important;
+    border-radius: 0ex 0ex 2ex 2ex !important;
+}
+
+div[name*=Card] .grid-header-wrapper .grid-header-text>span {
+    margin-left: .5ex
+}
+
+div[name*=Card] .panel-body-wrapper {
+    background: #fff!important;
+    border-radius: 0 0 2.5ex 2.5ex!important
+}
+
+div[name*=NT] .panel-toolbars,div[name*=NT] .grid-toolbars {
+    visibility: hidden;
+    height: 0!important
+}
+
+div[name*=WT] .grid-toolbars {
+    background: #fff;
+    height: 6.7ex;
+    border-radius: 2ex 2ex 0 0!important
+}
+
+.grid-toolbars {
+    background-color: #fff!important
+}
+
+div[name*=Card] .iconCon {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 7.6ex
+}
+
+div[name*=Card] {
+    margin-bottom: 3ex
+}
+
+.RelationshipsBody {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #fff;
+    border-radius: 0 0 2.5ex 2.5ex;
+    margin-bottom: 3.5ex;
+    padding-bottom: 1.8ex
+}
+
+.RelationshipsHeader {
+    background-color: #fff;
+    height: 3.6ex;
+    border-radius: 1.3ex 1.3ex 0 0;
+    padding-right: 2ex;
+    padding-left: 2.7ex;
+    display: flex;
+    align-items: center;
+    font-size: 3.4ex!important;
+    font-weight: 700;
+    color: #0261ac;
+    padding-top: 1.1ex;
+    padding-bottom: .6ex
+}
+
+.persImg {
+    width: 15.1ex;
+    height: 14.1ex;
+    border-radius: 100%
+}
+
+.head-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+.reqCard {
+    background-color: #feece4!important;
+    padding: 1ex;
+    width: 41ex;
+    border-radius: 2ex;
+    margin: 2ex 0;
+    border: 1px solid #bebebe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2ex!important
+}
+
+.p2Card {
+    background-color: #f7fee3!important;
+    padding: 2ex;
+    width: 41ex;
+    border-radius: 2ex;
+    margin: 2ex 0;
+    border: 1px solid #bebebe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.cardTitle,.persID {
+    width: 19ex;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5ex!important;
+    font-family: swcc-medium!important
+}
+
+.cardTitle {
+    color: #505050!important;
+    font-family: swcc-medium!important
+}
+
+.persID {
+    color: #f96523!important;
+    font-family: swcc-medium!important
+}
+
+.head-foot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3ex
+}
+
+.persName {
+    font-size: 3ex!important;
+    font-weight: 700;
+    font-family: swcc-medium!important;
+    color: #f96523!important
+}
+
+span.persDep {
+    font-size: 2.7ex!important;
+    color: #505050!important;
+    font-weight: 700;
+    font-family: swcc-medium!important
+}
+
+.RelationshipsCard {
+    width: 71.5%;
+    margin: auto
+}
+
+.notesCard {
+    width: 71.5%
+}
+
+div.notesCard-head {
+    background-color: #fff;
+    height: 3.6ex;
+    border-radius: 1.5ex 1.5ex 0 0;
+    padding-right: 2ex;
+    padding-left: 2ex;
+    display: flex;
+    align-items: center;
+    color: #0261ac!important;
+    font-size: 3.4ex!important;
+    font-weight: 700;
+    padding-top: 1.1ex;
+    padding-bottom: 1.3ex
+}
+
+div.notesCard-body {
+    background: #fff;
+    border-radius: 0 0 2.5ex 2.5ex;
+    margin-bottom: 6ex;
+    display: grid;
+    grid-gap: 0 0;
+    grid-template-columns: repeat(auto-fit,50ex);
+    justify-content: space-between;
+    width: 100%;
+    align-content: space-around;
+    justify-items: start
+}
+
+.noteCard {
+    width: 50ex;
+    margin-bottom: 2ex
+}
+
+.noteCard-head {
+    display: flex;
+    flex-direction: row;
+    padding: 1ex;
+    justify-content: space-between
+}
+
+span.noteNumber {
+    background: #feece4;
+    width: 4ex!important;
+    height: 3ex!important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2.6ex!important;
+    color: #f96523!important;
+    border-radius: 100%
+}
+
+.note-creater-div {
+    font-size: 3ex;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 700;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #505050!important;
+    max-width: 30ex;
+    width: fit-content;
+    min-width: 16ex
+}
+
+.note-date-created {
+    width: 11ex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2.2ex!important;
+    font-weight: 700;
+    color: #f96523!important
+}
+
+.noteCard-body {
+    padding: 1ex;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start
+}
+
+.noteCard-body div {
+    padding: 1ex;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch
+}
+
+span.note-label {
+    font-size: 2.3ex!important;
+    margin: .7ex 0;
+    color: #8e8e8e!important
+}
+
+p.the-note {
+    font-size: 2.5ex;
+    color: #505050!important;
+    direction: rtl
+}
+
+.row:has(.notesCard),.row:has(.RelationshipsCard) {
+    padding: 0 3ex
+}
+
+div[name="Card 4 NT"] {
+    visibility: hidden;
+    height: 0!important
+}
+
+.grid-header-text {
+    font-weight: 700!important
+}
+
+div[name*=DDH] .select-box {
+    margin-bottom: 2ex!important
+}
+
+a[name="Approve Button"],a[name="Reject Button"],a[name="add inv Button"],a[name="Button cancel"],a[name="Q Button"],a[name="Close Button"],a[name="A Button"],a[name=Button],a[name="Close inv Button"] {
+    border-radius: 3.1ex!important;
+    font-weight: 700;
+    background: #06c!important;
+    width: 19ex!important;
+    height: 5ex!important;
+    font-size: 16px
+}
+
+div[name="OTP Card WT"] .SourceCode-Forms-Controls-Web-Button {
+    margin-top: 2.1ex
+}
+
+a[name="Reject Button"],a[name="add inv Button"],a[name="Button cancel"],a[name=Button],a[name="Close inv Button"] {
+    border-radius: 3.1ex!important;
+    font-weight: 700;
+    width: 19ex!important;
+    text-align: center;
+    background: #06c!important;
+    color: #fff!important;
+    padding: 1.8ex 0 1.4ex!important;
+    height: 5ex!important;
+    font-size: 16px
+}
+
+div[name*=Card] a.action-row {
+    border-radius: 3.1ex!important;
+    font-weight: 700;
+    width: 22ex!important;
+    height: 3ex!important;
+    text-align: center;
+    background: #06c!important;
+    color: #fff!important;
+    padding: 1.8ex 0 1.4ex!important;
+    margin-top: .5ex
+}
+
+div[name*=FD] .grid-content-cell-wrapper {
+    text-align: center!important
+}
+
+div[name*=Card] .runtime-list-item {
+    font-size: 2.4ex
+}
+
+div[name*=Card] td .grid-content-cell {
+    height: 8ex!important;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+div[name*=Card] .creator-postion-span,div[name*=Card] .creator-name-span,div[name*=Card] .creator-name-span {
+    width: fit-content
+}
+
+.note-creater-div span {
+    font-size: 1.2ex!important
+}
+
+.popup-footer-c .SourceCode-Forms-Controls-Web-Button {
+    border-radius: 3.1ex!important;
+    font-weight: 700;
+    width: 20ex!important;
+    height: 5ex!important
+}
+
+.popup-footer-c {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row
+}
+
+div[name*=Card] .grid-content-cell-wrapper>span {
+    font-size: 2.1ex
+}
+
+div[name*="Worklist Card WT"] table.nav {
+    margin-bottom: 2.5ex;
+    box-shadow: 0 0 15px #0066cc40;
+    background: #fff!important
+}
+
+div[name*="Worklist Card WT"] .SourceCodeFormsControlsWorklist {
+    background: #ebf3fd!important
+}
+
+div[name*="Worklist Card WT"] .worklist-grid-column-header,div[name*="Worklist Card WT"] .worklist-grid-column-header-cell-text,div[name*="Worklist Card WT"] .worklist-empty-grid-header {
+    background-color: #fff!important
+}
+
+div[name*="Worklist Card WT"] .WorkListGridHeader {
+    background-color: #fff!important
+}
+
+div[name*="Worklist Card WT"] .WorklistItemSectionCell {
+    box-shadow: 0 0 15px #0066cc40;
+    border-radius: 0 0 2.5ex 2.5ex!important
+}
+
+div[name*="Worklist Card WT"] .worklist-grid-column-header-cell-text {
+    font-size: 2ex!important;
+    color: #000!important;
+    font-weight: 700!important;
+    text-align: center
+}
+
+div[name*="Worklist Card WT"] .WorkListGridHeader>tr {
+    background-color: #fff
+}
+
+div[name*="Worklist Card WT"] .nav tr:nth-child(even) {
+    background: #e0ffff!important
+}
+
+div[name*="Worklist Card WT"] tr.WorklistItemGridRow td {
+    background-color: #fff!important
+}
+
+div[name*="Worklist Card WT"] .WorkListGridHeader th span {
+    font-size: 2ex!important;
+    font-weight: 700!important;
+    color: #000!important
+}
+
+div[name*="Worklist Card WT"] .worklistToolbarHeaderTextWrapper span {
+    font-size: 3.4ex!important;
+    font-weight: 700!important;
+    color: #06c!important
+}
+
+div[name*="Worklist Card WT"] td.worklistToolbarHeaderTextWrapper {
+    padding: 1.5ex!important
+}
+
+div[name*="Worklist Card WT"] .SourceCodeFormsControlsWorklist {
+    border: none!important
+}
+
+div[name*="Worklist Card WT"] .SourceCodeFormsControlsWorklist {
+    padding: 1.7ex
+}
+
+div[name*="Worklist Card WT"] table.nav {
+    border-radius: 2.5ex 2.5ex 0 0!important
+}
+
+div[name*="Worklist Card WT"] .WorkListGridTableBody {
+    border-radius: 0 0 2.5ex 2.5ex
+}
+
+div[name*="Worklist Card WT"] span.text-underline {
+    font-size: 1.9ex!important
+}
+
+td.WorklistItemGridCell {
+    text-align: center
+}
+
+.NB {
+    padding: 0 2.7ex;
+    background: #fff;
+    border-radius: 0 0 2ex 2ex
+}
+
+input[name="User Title Text Box"] {
+    font-weight: lighter!important
+}
