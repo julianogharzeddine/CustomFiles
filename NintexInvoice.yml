@@ -1,0 +1,922 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: e-Trade Nintex Basamh
+  contact: {}
+host: e550089-iflmap.hcisbt.ae1.hana.ondemand.com
+basePath: /http/Nintex
+securityDefinitions:
+  basic:
+    type: basic
+schemes:
+- https
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /GetAllBatchByMaterialID:
+    post:
+      summary: Material Master - MMGetAllBatchByMaterialID
+      tags:
+      - Misc
+      operationId: MaterialMaster-MMGetAllBatchByMaterialID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/MaterialMaster-MMGetAllBatchByMaterialIDRequest'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              Batch:
+                type: array
+                items:
+                  $ref: '#/definitions/MMGetAllBatchByMaterialIDRequestResponse'
+      security:
+      - basic: []
+  /S4MaterialMaster:
+    post:
+      summary: Material Master - MM
+      tags:
+      - Misc
+      operationId: MaterialMaster-MM
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/MaterialMaster-MMRequest'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              Batch:
+                type: array
+                items:
+                  $ref: '#/definitions/MMResponse'
+      security:
+      - basic: []
+  /GetBatchByBatchID:
+    post:
+      summary: Material Master - MMGetBatchByID
+      tags:
+      - Misc
+      operationId: MaterialMaster-MMGetBatchByID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/MaterialMaster-MMGetBatchByIDRequest'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              Batch:
+                type: array
+                items:
+                  $ref: '#/definitions/MMGetBatchByIDResponse'
+      security:
+      - basic: []
+  /S4InvoiceAPI:
+    post:
+      summary: InvoiceAPI - GetInvoiceByInvoiceID
+      tags:
+      - Misc
+      operationId: InvoiceAPI-GetInvoiceByInvoiceID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/InvoiceAPI-GetInvoiceByInvoiceIDRequest'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              Batch:
+                type: array
+                items:
+                  $ref: '#/definitions/GetInvoiceByInvoiceIDResponse'
+      security:
+      - basic: []
+  /S4ContainerAPI:
+    post:
+      summary: ContainerAPI - GetContainerByContainerID
+      tags:
+      - Misc
+      operationId: ContainerAPI-GetContainerByContainerID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/ContainerAPI-GetContainerByContainerIDRequest'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              Batch:
+                type: array
+                items:
+                  $ref: '#/definitions/GetContainerByContainerIDResponse'
+      security:
+      - basic: []
+  /S4Container/PONumber:
+    post:
+      summary: ContainerAPI - GetContainerByPoNumber&ContainerID
+      tags:
+      - Misc
+      operationId: ContainerAPI-GetContainerByPoNumber&ContainerID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/ContainerAPI-GetContainerByPoNumber%26ContainerIDRequest'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              Batch:
+                type: array
+                items:
+                  $ref: '#/definitions/GetContainerByPoNumber%26ContainerIDResponse'
+      security:
+      - basic: []
+  /S4InvoiceAPI/Batch:
+    post:
+      summary: InvoiceAPI - GetInvoiceWithBatchID&InvoiceID
+      tags:
+      - Misc
+      operationId: InvoiceAPI-GetInvoiceWithBatchID&InvoiceID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/InvoiceAPI-GetInvoiceWithBatchID%26InvoiceIDRequest'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              Batch:
+                type: array
+                items:
+                  $ref: '#/definitions/GetInvoiceWithBatchID%26InvoiceIDResponse'
+      security:
+      - basic: []
+  /S4InvoiceAPI/GetBatchByItemID:
+    post:
+      summary: GetBatchByItemID
+      tags:
+      - Misc
+      operationId: GetBatchByItemID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetBatchByItemIDRequest'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              Batch:
+                type: array
+                items:
+                  $ref: '#/definitions/GetBatchByItemIDResponse'
+      security:
+      - basic: []
+  /S4InvoiceAPI/GetItemsByINVID:
+    post:
+      summary: GetItemsByInvoiceNumber
+      tags:
+      - Misc
+      operationId: GetItemsByInvoiceNumber
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetItemsByInvoiceNumberRequest'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              Batch:
+                type: array
+                items:
+                  $ref: '#/definitions/GetItemsByInvoiceNumberResponse'
+      security:
+      - basic: []
+definitions:
+  MaterialMaster-MMGetAllBatchByMaterialIDRequest:
+    title: MaterialMaster-MMGetAllBatchByMaterialIDRequest
+    example:
+      MaterialID: '10000017'
+    type: object
+    properties:
+      MaterialID:
+        type: string
+    required:
+    - MaterialID
+  MaterialMaster-MMRequest:
+    title: MaterialMaster-MMRequest
+    example:
+      MaterialID: '10000017'
+    type: object
+    properties:
+      MaterialID:
+        type: string
+    required:
+    - MaterialID
+  MaterialMaster-MMGetBatchByIDRequest:
+    title: MaterialMaster-MMGetBatchByIDRequest
+    example:
+      BatchID: '0000059539'
+    type: object
+    properties:
+      BatchID:
+        type: string
+    required:
+    - BatchID
+  InvoiceAPI-GetInvoiceByInvoiceIDRequest:
+    title: InvoiceAPI-GetInvoiceByInvoiceIDRequest
+    example:
+      InvoiceID: '2300364331'
+    type: object
+    properties:
+      InvoiceID:
+        type: string
+    required:
+    - InvoiceID
+  ContainerAPI-GetContainerByContainerIDRequest:
+    title: ContainerAPI-GetContainerByContainerIDRequest
+    example:
+      ContainerID: '0080087141'
+    type: object
+    properties:
+      ContainerID:
+        type: string
+    required:
+    - ContainerID
+  ContainerAPI-GetContainerByPoNumber&ContainerIDRequest:
+    title: ContainerAPI-GetContainerByPoNumber&ContainerIDRequest
+    example:
+      ContainerID: '0080087141'
+      PONumber: '1900005835'
+    type: object
+    properties:
+      ContainerID:
+        type: string
+      PONumber:
+        type: string
+    required:
+    - ContainerID
+    - PONumber
+  InvoiceAPI-GetInvoiceWithBatchID&InvoiceIDRequest:
+    title: InvoiceAPI-GetInvoiceWithBatchID&InvoiceIDRequest
+    example:
+      InvoiceID: '2300000018'
+      BatchId: ''
+      MaterialId: '10000210'
+    type: object
+    properties:
+      InvoiceID:
+        type: string
+      BatchId:
+        type: string
+      MaterialId:
+        type: string
+    required:
+    - InvoiceID
+    - BatchId
+    - MaterialId
+  GetBatchByInvoiceandMaterialNumberRequest:
+    title: GetBatchByInvoiceandMaterialNumberRequest
+    example:
+      InvoiceID: '2300000018'
+      BatchId: ''
+      MaterialId: '10000210'
+    type: object
+    properties:
+      InvoiceID:
+        type: string
+      BatchId:
+        type: string
+      MaterialId:
+        type: string
+    required:
+    - InvoiceID
+    - BatchId
+    - MaterialId
+  GetBatchByItemIDRequest:
+    title: GetBatchByItemIDRequest
+    example:
+      BillingID: '2300104254'
+      BillingItemID: '10'
+    type: object
+    properties:
+      BillingID:
+        type: string
+      BillingItemID:
+        type: string
+    required:
+    - BillingID
+    - BillingItemID
+  GetItemsByInvoiceNumberRequest:
+    title: GetItemsByInvoiceNumberRequest
+    example:
+      InvoiceID: '2300000018'
+    type: object
+    properties:
+      InvoiceID:
+        type: string
+    required:
+    - InvoiceID
+  MMGetAllBatchByMaterialIDRequestResponse:
+    type: object
+    properties: 
+      Item: 
+        type: array
+        items: 
+          type: object
+          properties: 
+            Material: 
+              type: string
+            Batch: 
+              type: string
+            ExpiryDate: 
+              type: string
+              format: date
+            ManufactureDate: 
+              type: string
+              format: date
+  MMResponse:
+    type: object
+    properties: 
+      Item: 
+        type: object
+        properties: 
+          MaterialID: 
+            type: string
+          CreatedOn: 
+            type: string
+            format: date
+          CreatedBy: 
+            type: string
+          LastChangeOn: 
+            type: string
+            format: date
+          ChangedBy: 
+            type: string
+          DeletionFlagClientLevel: 
+            type: string
+          MaterialName: 
+            type: string
+          MaterialType: 
+            type: string
+          MaterialGroup: 
+            type: string
+          MarketingGrpName: 
+            type: string
+          BrandName: 
+            type: string
+          PortfolioName: 
+            type: string
+          CategoryName: 
+            type: string
+          OldMaterialNumber: 
+            type: string
+          BaseUnitOfMeasure: 
+            type: string
+          SizeDimension: 
+            type: string
+          BasicMaterial: 
+            type: string
+          IndustrialSTDdescription: 
+            type: string
+          GrossWeight: 
+            type: string
+          NetWeight: 
+            type: string
+          WeightUnit: 
+            type: string
+          Volume: 
+            type: string
+          VolumeUnit: 
+            type: string
+          TransportGroup: 
+            type: string
+          Division: 
+            type: string
+          EAN_upc: 
+            type: string
+          EAN_Category: 
+            type: string
+          Length: 
+            type: string
+          Width: 
+            type: string
+          Height: 
+            type: string
+          DimensionUnit: 
+            type: string
+          ProductHeirarchy: 
+            type: string
+          X_DistributionChainStatus: 
+            type: string
+          X_PlantMaterialStatus: 
+            type: string
+          ValidFrom: 
+            type: string
+          TaxClassification: 
+            type: string
+          MinumumShelfLife: 
+            type: string
+          PeriodIndicatorForShelfLife: 
+            type: string
+          GeneralItemCategoryGroup: 
+            type: string
+          TotalShelfLife: 
+            type: string
+          LastChangedTime: 
+            type: string
+          MaterialDescription: 
+            type: string
+          Batch: 
+            type: object
+            properties: 
+              Item: 
+                type: array
+                items: 
+                  type: object
+                  properties: 
+                    Material: 
+                      type: string
+                    Batch: 
+                      type: string
+                    ExpiryDate: 
+                      type: string
+                      format: date
+                    ManufactureDate: 
+                      type: string
+                      format: date
+  MMGetBatchByIDResponse:
+    type: object
+    properties: 
+      Item: 
+        type: object
+        properties: 
+          Material: 
+            type: string
+          Batch: 
+            type: string
+          ExpiryDate: 
+            type: string
+            format: date
+          ManufactureDate: 
+            type: string
+            format: date
+            
+  GetInvoiceByInvoiceIDResponse:
+    type: object
+    properties: 
+      Item: 
+        type: array
+        items: 
+          type: object
+          properties: 
+            BillingID: 
+              type: string
+            BillingItemID: 
+              type: string
+            MatId: 
+              type: string
+            MatName: 
+              type: string
+            BrandName: 
+              type: string
+            MaterialGrpName: 
+              type: string
+            MarketingGrpName: 
+              type: string
+            MatGrp: 
+              type: string
+            PortfolioName: 
+              type: string
+            CategoryName: 
+              type: string
+            ManufactureDate: 
+              type: string
+              format: date
+            ExpiryDate: 
+              type: string
+              format: date
+            BatchId: 
+              type: string
+            partnerId: 
+              type: string
+            PartnerName: 
+              type: string
+            SalesOrg: 
+              type: string
+            DistribChannel: 
+              type: string
+            SalesorgName: 
+              type: string
+            SalesChannelName: 
+              type: string
+            SalesOfcName: 
+              type: string
+            SalesManName: 
+              type: string
+            CustGrpName: 
+              type: string
+            DeliveryId: 
+              type: string
+            ActualDeliveryDate: 
+              type: string
+              format: date
+            BillingDate: 
+              type: string
+              format: date
+            DeliveryQty: 
+              type: string
+            ItemDesc: 
+              type: string
+            Quantity: 
+              type: string
+            Unit: 
+              type: string
+            UnitPrice: 
+              type: string
+            TotalAmtExcludeVat: 
+              type: string
+            TotalAmtWithVat: 
+              type: string
+            DiscountValue: 
+              type: string
+            NetDiscount: 
+              type: string
+            Vat: 
+              type: string
+            VatValue: 
+              type: string
+            SalesRepName: 
+              type: string
+            CustId: 
+              type: string
+            ShipTo: 
+              type: string
+            ShipToId: 
+              type: string
+            CustToAddr: 
+              type: string
+            ShipToAddr: 
+              type: string
+            CustCity: 
+              type: string
+            SHIPToCity: 
+              type: string
+            Waers: 
+              type: string
+  GetContainerByContainerIDResponse:
+    type: object
+    properties: 
+      Item: 
+        type: array
+        items: 
+          type: object
+          properties: 
+            ContainerID: 
+              type: string
+            Vendor: 
+              type: string
+            VendorName: 
+              type: string
+            VendorCountry: 
+              type: string
+            PoNumber: 
+              type: string
+            PoItem: 
+              type: string
+            Material: 
+              type: string
+            Plant: 
+              type: string
+            Quantity: 
+              type: string
+            Unit: 
+              type: string
+  GetContainerByPoNumber&ContainerIDResponse:
+    type: object
+    properties: 
+      Item: 
+        type: array
+        items: 
+          type: object
+          properties: 
+            ContainerID: 
+              type: string
+            Vendor: 
+              type: string
+            VendorName: 
+              type: string
+            VendorCountry: 
+              type: string
+            PoNumber: 
+              type: string
+            PoItem: 
+              type: string
+            Material: 
+              type: string
+            Plant: 
+              type: string
+            Quantity: 
+              type: string
+            Unit: 
+              type: string
+              
+  GetInvoiceWithBatchID&InvoiceIDResponse:
+    type: object
+    properties: 
+      Item: 
+        type: object
+        properties: 
+          BillingID: 
+            type: string
+          BillingItemID: 
+            type: string
+          MatId: 
+            type: string
+          MatName: 
+            type: string
+          BrandName: 
+            type: string
+          MaterialGrpName: 
+            type: string
+          MarketingGrpName: 
+            type: string
+          MatGrp: 
+            type: string
+          PortfolioName: 
+            type: string
+          CategoryName: 
+            type: string
+          ManufactureDate: 
+            type: string
+            format: date
+          ExpiryDate: 
+            type: string
+            format: date
+          BatchId: 
+            type: string
+          partnerId: 
+            type: string
+          PartnerName: 
+            type: string
+          SalesOrg: 
+            type: string
+          DistribChannel: 
+            type: string
+          SalesorgName: 
+            type: string
+          SalesChannelName: 
+            type: string
+          SalesOfcName: 
+            type: string
+          SalesManName: 
+            type: string
+          CustGrpName: 
+            type: string
+          DeliveryId: 
+            type: string
+          ActualDeliveryDate: 
+            type: string
+            format: date
+          BillingDate: 
+            type: string
+            format: date
+          DeliveryQty: 
+            type: string
+          ItemDesc: 
+            type: string
+          Quantity: 
+            type: string
+          Unit: 
+            type: string
+          UnitPrice: 
+            type: string
+          TotalAmtExcludeVat: 
+            type: string
+          TotalAmtWithVat: 
+            type: string
+          DiscountValue: 
+            type: string
+          NetDiscount: 
+            type: string
+          Vat: 
+            type: string
+          VatValue: 
+            type: string
+          SalesRepName: 
+            type: string
+          CustId: 
+            type: string
+          ShipTo: 
+            type: string
+          ShipToId: 
+            type: string
+          CustToAddr: 
+            type: string
+          ShipToAddr: 
+            type: string
+          CustCity: 
+            type: string
+          SHIPToCity: 
+            type: string
+          Waers: 
+            type: string
+  GetBatchByInvoiceandMaterialNumberResponse:
+    type: object
+    properties: 
+      Item: 
+        type: object
+        properties: 
+          BillingID: 
+            type: string
+          BillingItemID: 
+            type: string
+          MatId: 
+            type: string
+          MatName: 
+            type: string
+          BrandName: 
+            type: string
+          MaterialGrpName: 
+            type: string
+          MarketingGrpName: 
+            type: string
+          MatGrp: 
+            type: string
+          PortfolioName: 
+            type: string
+          CategoryName: 
+            type: string
+          ManufactureDate: 
+            type: string
+            format: date
+          ExpiryDate: 
+            type: string
+            format: date
+          BatchId: 
+            type: string
+          partnerId: 
+            type: string
+          PartnerName: 
+            type: string
+          SalesOrg: 
+            type: string
+          DistribChannel: 
+            type: string
+          SalesorgName: 
+            type: string
+          SalesChannelName: 
+            type: string
+          SalesOfcName: 
+            type: string
+          SalesManName: 
+            type: string
+          CustGrpName: 
+            type: string
+          DeliveryId: 
+            type: string
+          ActualDeliveryDate: 
+            type: string
+            format: date
+          BillingDate: 
+            type: string
+            format: date
+          DeliveryQty: 
+            type: string
+          ItemDesc: 
+            type: string
+          Quantity: 
+            type: string
+          Unit: 
+            type: string
+          UnitPrice: 
+            type: string
+          TotalAmtExcludeVat: 
+            type: string
+          TotalAmtWithVat: 
+            type: string
+          DiscountValue: 
+            type: string
+          NetDiscount: 
+            type: string
+          Vat: 
+            type: string
+          VatValue: 
+            type: string
+          SalesRepName: 
+            type: string
+          CustId: 
+            type: string
+          ShipTo: 
+            type: string
+          ShipToId: 
+            type: string
+          CustToAddr: 
+            type: string
+          ShipToAddr: 
+            type: string
+          CustCity: 
+            type: string
+          SHIPToCity: 
+            type: string
+          Waers: 
+            type: string
+  GetBatchByItemIDResponse:
+    type: array
+    items: 
+      type: object
+      properties: 
+        BillingID: 
+          type: string
+        BillingItemID: 
+          type: string
+        Batch: 
+          type: string
+  GetItemsByInvoiceNumberResponse:
+    type: array
+    items: 
+      type: object
+      properties: 
+        BillingID: 
+          type: string
+        BillingItemID: 
+          type: string
+security: []
+tags:
+- name: Misc
+  description: ''
